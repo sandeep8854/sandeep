@@ -8,9 +8,9 @@ import { SiFreecodecamp } from "react-icons/si";
 
 const Hero = () => {
   const social = [
+    FaLink,
     FaGithub,
     FaGitlab,
-    FaLink,
     FaLinkedin,
     FaHackerrank,
     SiLeetcode,
@@ -18,6 +18,13 @@ const Hero = () => {
     SiFreecodecamp,
   ];
   const socialMediaIcons = [
+    {
+      id: "Link",
+      icon: "FaLink",
+      link: "https://sandeep-portfolio-iu6a.vercel.app/",
+      target: "_blank",
+      rel: "",
+    },
     {
       id: "Github",
       icon: "FaGithub",
@@ -29,13 +36,6 @@ const Hero = () => {
       id: "GitLab",
       icon: "FaGitlab",
       link: "https://gitlab.com/sandeepprajapati8854",
-      target: "_blank",
-      rel: "",
-    },
-    {
-      id: "Link",
-      icon: "FaLink",
-      link: "https://sandeep-portfolio-iu6a.vercel.app/",
       target: "_blank",
       rel: "",
     },
