@@ -1,5 +1,33 @@
 import "./skill.css";
+import Java from "../../../public/java.png";
+import JavaScript from "../../../public/js-logo.png";
+import Html from "../../../public/html.png";
+import Css from "../../../public/css-logo.png";
+import React from "../../../public/react-logo.png";
+import NodeJS from "../../../public/nodeJS.png";
+import MongoDB from "../../../public/mongodb.jpeg";
+import SQL from "../../../public/sql.png";
+import StyledComponent from "../../../public/styledComponent.png";
+import Redux from "../../../public/redux.png";
+import Dsa from "../../../public/dsa.jpg";
+import Saas from "../../../public/saas.png";
+import Jdbc from "../../../public/jdbc.jpeg";
 
+const tech = [
+  Java,
+  JavaScript,
+  Html,
+  Css,
+  React,
+  NodeJS,
+  MongoDB,
+  SQL,
+  StyledComponent,
+  Redux,
+  Dsa,
+  Saas,
+  Jdbc,
+];
 const Skill = () => {
   const skills = [
     {
@@ -77,7 +105,7 @@ const Skill = () => {
             <>
               <div className="skills-item">
                 <div className="skill-Item-img-wrapper">
-                  <img src={ele.imgSrc} alt="" width={ele.width} key={index} />
+                  <img src={tech[index]} alt="" width={ele.width} key={index} />
                 </div>
                 <p className="skill-item-title">{ele.name}</p>
               </div>
