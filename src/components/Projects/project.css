@@ -1,0 +1,39 @@
+.section-project {
+  padding: 2rem;
+  background: #fff;
+}
+h1,
+.headingProj {
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 0;
+  color: #ea4c89;
+  margin-bottom: 3rem !important;
+}
+div .project-content {
+  background-color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 30rem;
+  padding: 2.6rem 1.5rem;
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+}
+h4,
+.project-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+  color: #2349b9;
+}
+
+.project-text {
+  font-size: 14px;
+  color: #4d4d4d;
+  font-weight: 300;
+}
+.project-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

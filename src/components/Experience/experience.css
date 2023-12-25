@@ -1,0 +1,61 @@
+.section-experience {
+  padding: 2rem 2rem 0 2rem;
+  background: #fff;
+}
+
+.experience-title {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #ea4c89;
+  margin-bottom: 3rem;
+}
+.progress-wrapper {
+  width: 330px;
+  margin: auto;
+}
+.step-progress {
+  position: relative;
+  padding-left: 45px;
+  list-style: none;
+  font-size: 1.6rem;
+}
+.step-progress::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 5px;
+  left: 14px;
+  background-color: #d7d6d6;
+}
+.step-progress-item {
+  position: relative;
+}
+.step-progress-item::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ea4c89;
+  border-radius: 50%;
+  top: 5px;
+  left: -36px;
+}
+
+ul,
+.step-progress-item:not(:last-child) {
+  padding-bottom: 2rem;
+}
+.designation {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+a,
+.org-name {
+  text-decoration: none;
+  color: #0074cc;
+}
+.year {
+  color: #4d4d4d;
+}

@@ -1,0 +1,31 @@
+.section-about {
+  padding: 3.3rem 1.9rem;
+  background: #ffffff;
+}
+
+.section-title {
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 3rem !important;
+}
+.about-title {
+  color: #ea4c89 !important;
+  margin-bottom: 2rem;
+}
+.page-container {
+  text-align: center;
+}
+.about-content {
+  font-size: 1.7rem;
+  color: #4d4d4d;
+  text-align: center;
+  line-height: 1.6;
+  max-width: 55rem;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  .about-content {
+    width: 90%;
+  }
+}
