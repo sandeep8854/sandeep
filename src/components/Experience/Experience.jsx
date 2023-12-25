@@ -10,9 +10,9 @@ const Experience = () => {
       target: "_blank",
     },
     {
-      designation: "Software Development",
+      designation: "Software Development Trainee",
       link: "https://mountblue.io/",
-      company: "MountBlue Technologies",
+      company: "MountBlue Technologies Pvt. Ltd",
       year: "February 2023 - April 2023 ",
       target: "_blank",
     },
