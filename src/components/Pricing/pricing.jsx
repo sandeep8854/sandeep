@@ -36,6 +36,9 @@ const Paragraph = styled.p`
   padding: 0 2rem 0 2rem;
   font-size: 1.6rem;
   color: #4d4d4d;
+  @media only screen and (max-width: 540px) {
+    font-size: 15px;
+  }
 `;
 
 const Cheers = styled.span`
