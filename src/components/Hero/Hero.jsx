@@ -6,6 +6,7 @@ import { SiLeetcode } from "react-icons/si";
 import { BsTwitterX } from "react-icons/bs";
 import { SiFreecodecamp } from "react-icons/si";
 import { PiLinkSimpleHorizontalBreak } from "react-icons/pi";
+import Button from "../Button/Button";
 
 const Hero = () => {
   const social = [
@@ -123,6 +124,7 @@ const Hero = () => {
                 );
               })}
             </div>
+            <Button />
             <div className="profile-color-ball profile-color-ball4"></div>
             <div className="profile-color-ball profile-color-ball5"></div>
           </div>
