@@ -20,6 +20,13 @@ div .project-content {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 5px;
 }
+
+@media only screen and (max-width: 450px) {
+  div .project-content {
+    /* font-size: 12px; */
+    width: auto;
+  }
+}
 h4,
 .project-title {
   font-size: 1.8rem;
