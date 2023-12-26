@@ -30,7 +30,7 @@ const Button = () => {
   return (
     <Container className="container-btn">
       <Link
-        href="https://github.com/sandeep8854"
+        href="https://github.com/sandeep8854/sandeep"
         className="main-btn"
         target="_blank"
       >

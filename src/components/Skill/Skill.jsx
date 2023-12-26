@@ -98,7 +98,7 @@ const Skill = () => {
   ];
   return (
     <div className="skills-section">
-      <h1 className="section-title">Skills</h1>
+      <h1 className="section-title">Skills ~</h1>
       <div className="skills-item-wrapper">
         {skills.map((ele, index) => {
           return (

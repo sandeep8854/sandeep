@@ -5,6 +5,7 @@ import Experience from "./components/Experience/Experience";
 import Project from "./components/Projects/Project";
 import Education from "./components/Education/Education";
 import Footer from "./components/Footer/Footer";
+import Pricing from "./components/Pricing/pricing";
 const App = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const App = () => {
       <Experience />
       <Project />
       <Education />
+      <Pricing />
       <Footer />
     </div>
   );
