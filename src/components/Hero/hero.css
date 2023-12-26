@@ -41,6 +41,15 @@
   left: -6.1rem;
   bottom: 1.5rem;
 }
+.profile-box-bottom {
+  width: 8.6rem;
+  height: 8.1rem;
+  border: 7px solid #6666ff;
+  position: absolute;
+  right: 81px;
+  top: 138px;
+  z-index: 5;
+}
 
 .profile-image {
   position: absolute;
@@ -162,5 +171,29 @@
   .profile-content-right {
     margin-left: 0;
     margin-top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .profile-box-bottom {
+    right: 81px;
+    top: 138px;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  .profile-box-bottom {
+    right: 104px;
+    top: 174px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .profile-color-ball2 {
+    top: 0;
+    right: 48px;
+  }
+  .profile-color-ball3 {
+    right: 93px;
+    bottom: 0px;
   }
 }

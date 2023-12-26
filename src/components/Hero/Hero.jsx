@@ -83,6 +83,7 @@ const Hero = () => {
           <div className="profile-image-wrapper">
             <div className="profile-box-right"></div>
             <div className="profile-box-left"></div>
+            <div className="profile-box-bottom"></div>
             <img
               src={SandeepImage}
               alt="image by sandeep not found"
