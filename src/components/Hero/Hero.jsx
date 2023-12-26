@@ -1,14 +1,15 @@
 import SandeepImage from "../../../public/sandeep1.png";
 import "./hero.css";
-import { FaGithub, FaGitlab, FaLink, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaGitlab, FaLinkedin } from "react-icons/fa";
 import { FaHackerrank } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { BsTwitterX } from "react-icons/bs";
 import { SiFreecodecamp } from "react-icons/si";
+import { PiLinkSimpleHorizontalBreak } from "react-icons/pi";
 
 const Hero = () => {
   const social = [
-    FaLink,
+    PiLinkSimpleHorizontalBreak,
     FaGithub,
     FaGitlab,
     FaLinkedin,
@@ -20,7 +21,7 @@ const Hero = () => {
   const socialMediaIcons = [
     {
       id: "Link",
-      icon: "FaLink",
+      icon: "PiLinkSimpleHorizontalBreak",
       link: "https://sandeep-portfolio-iu6a.vercel.app/",
       target: "_blank",
       rel: "",
