@@ -16,6 +16,7 @@ const ImageContainer = styled.div`
   margin: 0 5rem 0 5rem;
   @media only screen and (max-width: 540px) {
     flex-direction: column;
+    margin: 0 2rem 0 2rem;
   }
 `;
 const ImageSection = styled.div`
