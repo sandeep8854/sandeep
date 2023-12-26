@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Project from "../../../public/career_progress.png";
+import { useState } from "react";
 const Container = styled.div`
   margin-top: 3rem;
 `;
@@ -38,6 +39,8 @@ const Paragraph = styled.p`
   color: #4d4d4d;
   @media only screen and (max-width: 540px) {
     font-size: 15px;
+    width: 100%;
+    padding: 0;
   }
 `;
 
@@ -46,8 +49,109 @@ const Cheers = styled.span`
   padding-left: 1.7rem;
   font-weight: 600;
   color: #f294b8;
+  @media only screen and (max-width: 540px) {
+    width: 100%;
+    padding: 0;
+  }
 `;
+
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (max-width: 581px) {
+    margin-top: 2rem;
+  }
+`;
+const Accordian = styled.div`
+  width: 50rem;
+  @media only screen and (max-width: 540px) {
+    width: 100%;
+  }
+`;
+const Item = styled.div`
+  background-color: #fff;
+  margin-bottom: 1.5rem;
+  padding: 1rem 2rem;
+`;
+const Title = styled.div`
+  color: #5f5f5f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border: 1px solid #5f5f5f;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 2rem;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+`;
+const Para = styled.p`
+  font-size: 1.6rem;
+  @media only screen and (max-width: 540px) {
+    font-size: 14px;
+  }
+`;
+const Spann = styled.span`
+  font-family: 3rem;
+  font-weight: 600;
+`;
+const ContectAndPrice = styled.div`
+  margin-top: 2rem;
+  border: 1px solid #5f5f5f;
+  padding: 10px 15px;
+  border-radius: 4px;
+`;
+const Rupees = styled.div`
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  @media only screen and (max-width: 540px) {
+    font-size: 15px;
+  }
+`;
+const Content = styled.div`
+  font-size: 1.2rem;
+  color: #5f5f5f;
+  line-height: 1.5;
+  @media only screen and (max-width: 540px) {
+    font-size: 12px;
+  }
+`;
+
 const Pricing = () => {
+  const pricingData = [
+    {
+      id: 1,
+      title: "Basic",
+      rupees: "Just for ₹6000/-",
+      content:
+        "Website with basic design call and email features, Show cases all your products. Online booking but offline payment no animations and databases.",
+    },
+    {
+      id: 2,
+      title: "Moderate",
+      rupees: "Just for ₹12000/-",
+      content:
+        "Website with creative design call, email and  features, Show cases all your products. Online booking but offline payment, animations added but no  databases.",
+    },
+    {
+      id: 3,
+      title: "Advanced",
+      rupees: "Just for ₹17000/-",
+      content:
+        "Website with advanced creative design call, email, whatsApp and SMS features, Show cases all your products. Online booking with online payment, animations and databases available.",
+    },
+  ];
+
+  const [isActive, setIsActive] = useState(null);
+
+  function clickFunction(index) {
+    if (isActive === index) {
+      return setIsActive(null);
+    }
+    setIsActive(index);
+  }
   return (
     <Container>
       <Headingcont>
@@ -67,6 +171,30 @@ const Pricing = () => {
         </AboutBusiness>
       </ImageContainer>
       {/*  */}
+      <Wrapper>
+        <Accordian>
+          {pricingData.map((ele, index) => {
+            return (
+              <>
+                <Item>
+                  <Title onClick={() => clickFunction(index)}>
+                    <Para>{ele.title}</Para>
+                    <Spann>{isActive === index ? "-" : "+"}</Spann>
+                  </Title>
+                  {isActive === index ? (
+                    <ContectAndPrice>
+                      <Rupees>{ele.rupees}</Rupees>
+                      <Content>{ele.content}</Content>
+                    </ContectAndPrice>
+                  ) : (
+                    <Para />
+                  )}
+                </Item>
+              </>
+            );
+          })}
+        </Accordian>
+      </Wrapper>
     </Container>
   );
 };
