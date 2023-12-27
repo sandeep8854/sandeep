@@ -24,6 +24,11 @@
   max-width: 55rem;
   margin: 0 auto;
 }
+@media only screen and (max-width: 769px) {
+  .section-about {
+    margin-top: 10rem;
+  }
+}
 @media only screen and (max-width: 768px) {
   .about-content {
     width: 90%;

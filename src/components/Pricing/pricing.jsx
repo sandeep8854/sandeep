@@ -3,6 +3,7 @@ import Project from "../../../public/career_progress.png";
 import { useState } from "react";
 const Container = styled.div`
   margin-top: 3rem;
+  overflow-x: hidden;
 `;
 const Headingcont = styled.div`
   margin: 3rem 0;

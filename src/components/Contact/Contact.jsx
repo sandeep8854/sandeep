@@ -4,12 +4,15 @@ import { PiPhone } from "react-icons/pi";
 import ConstactImg from "../../../public/contact.png";
 import Button from "../Button/Button";
 const Section = styled.section`
-  width: 100vw;
-  height: 100vh;
+  /* max-width: 100vw;
+  height: 100vh; */
   background-color: #fff;
-  padding: 10rem 3rem 5rem 3rem;
+  /* padding: 0;
+  margin: 0; */
   margin-left: 2rem;
   margin-right: 2rem !important;
+  margin-bottom: 2rem;
+
   @media only screen and (max-width: 650px) {
     margin-left: 1rem;
   }
@@ -34,6 +37,9 @@ const ParaGraph = styled.p`
   color: rgb(77, 77, 77);
   font-weight: 600;
   margin-bottom: 1rem;
+  @media only screen and (max-width: 650px) {
+    font-size: 1.4rem;
+  }
 `;
 const HeadingT = styled.h2`
   font-size: 2rem;
@@ -46,6 +52,9 @@ const Paragraph2 = styled.p`
   font-weight: 400;
   width: 80%;
   padding-bottom: 1rem;
+  @media only screen and (max-width: 650px) {
+    font-size: 1.6rem;
+  }
 `;
 const Form = styled.form``;
 const FirstLastConst = styled.div`
@@ -191,10 +200,16 @@ const EmailActual = styled.div`
 const SpanE = styled.span`
   font-size: 1.4rem;
   font-weight: 400;
+  @media only screen and (max-width: 650px) {
+    font-size: 1.6rem;
+  }
 `;
 const SapnS = styled.span`
   font-size: 1.2rem;
   color: rgb(77, 77, 77);
+  @media only screen and (max-width: 650px) {
+    font-size: 1.6rem;
+  }
 `;
 const PhoneContai = styled.div`
   display: flex;
@@ -224,10 +239,17 @@ const PhoneActual = styled.div`
 const SpanP = styled.span`
   font-size: 1.4rem;
   font-weight: 400;
+  @media only screen and (max-width: 650px) {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
 `;
 const SpanN = styled.span`
   font-size: 1.2rem;
   color: rgb(77, 77, 77);
+  @media only screen and (max-width: 650px) {
+    font-size: 1.6rem;
+  }
 `;
 
 const Contact = () => {
