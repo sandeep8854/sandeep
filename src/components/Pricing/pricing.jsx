@@ -65,7 +65,8 @@ const Wrapper = styled.div`
   }
 `;
 const Accordian = styled.div`
-  width: 50rem;
+  width: 100%;
+  margin: 0 2rem 0 2rem;
   @media only screen and (max-width: 540px) {
     width: 100%;
   }
@@ -115,7 +116,7 @@ const Content = styled.div`
   font-size: 1.2rem;
   color: #5f5f5f;
   line-height: 1.5;
-  @media only screen and (max-width: 540px) {
+  @media only screen and (max-width: 768px) {
     font-size: 12px;
   }
 `;
