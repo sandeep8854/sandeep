@@ -6,6 +6,7 @@ import Project from "./components/Projects/Project";
 import Education from "./components/Education/Education";
 import Footer from "./components/Footer/Footer";
 import Pricing from "./components/Pricing/pricing";
+import Contact from "./components/Contact/Contact";
 const App = () => {
   return (
     <div>
@@ -16,7 +17,8 @@ const App = () => {
       <Project />
       <Education />
       <Pricing />
-      <Footer />
+      <Contact />
+      {/* <Footer /> */}
     </div>
   );
 };
