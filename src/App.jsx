@@ -18,7 +18,7 @@ const App = () => {
       <Education />
       <Pricing />
       <Contact />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
