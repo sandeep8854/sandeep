@@ -151,6 +151,7 @@ const ButtonContai = styled.div``;
 const Right = styled.div`
   flex: 1;
   width: 100%;
+  border-radius: 4px;
   border-left: 2px solid rgb(242, 148, 184) !important;
 `;
 const ImageCntainer = styled.div`
