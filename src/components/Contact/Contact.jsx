@@ -216,6 +216,8 @@ const SpanE = styled.span`
   font-weight: 400;
   @media only screen and (max-width: 650px) {
     font-size: 1.6rem;
+    font-weight: 500;
+    color: rgb(77, 77, 77);
   }
 `;
 const SapnS = styled.span`
@@ -255,7 +257,8 @@ const SpanP = styled.span`
   font-weight: 400;
   @media only screen and (max-width: 650px) {
     font-size: 1.6rem;
-    font-weight: 300;
+    font-weight: 500;
+    color: rgb(77, 77, 77);
   }
 `;
 const SpanN = styled.span`
