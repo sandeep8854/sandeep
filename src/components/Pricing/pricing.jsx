@@ -40,8 +40,9 @@ const Paragraph = styled.p`
   padding: 0 2rem 0 2rem;
   font-size: 1.6rem;
   color: #4d4d4d;
+  line-height: 1.8;
   @media only screen and (max-width: 540px) {
-    font-size: 15px;
+    font-size: 13px;
     width: 100%;
     padding: 0;
   }
@@ -132,7 +133,7 @@ const Content = styled.div`
   color: #5f5f5f;
   line-height: 1.5;
   @media only screen and (max-width: 768px) {
-    font-size: 14px;
+    font-size: 13px;
   }
 `;
 
