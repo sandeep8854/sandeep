@@ -97,8 +97,16 @@ const Para = styled.p`
   }
 `;
 const Spann = styled.span`
-  font-family: 3rem;
-  font-weight: 600;
+  font-weight: 400;
+  min-height: 30px;
+  min-width: 30px;
+  width: 30px;
+  height: 30px;
+  background-color: #fad4e3;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  transition: background-color 225ms cubic-bezier(0.4, 0, 0.2, 1);
 `;
 const ContectAndPrice = styled.div`
   margin-top: 2rem;
