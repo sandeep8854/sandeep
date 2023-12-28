@@ -33,10 +33,14 @@ const Left = styled.div`
   width: 100%;
 `;
 const ParaGraph = styled.p`
+  display: inline;
   font-size: 1.2rem;
-  color: rgb(77, 77, 77);
+  color: #fff;
   font-weight: 600;
-  margin-bottom: 1rem;
+  background-color: rgb(242, 148, 184);
+  padding: 2px 11px;
+  border-radius: 15px;
+  text-transform: uppercase;
   @media only screen and (max-width: 650px) {
     font-size: 1.4rem;
   }
@@ -45,6 +49,7 @@ const HeadingT = styled.h2`
   font-size: 2rem;
   color: rgb(77, 77, 77);
   margin-bottom: 1rem;
+  margin-top: 1rem;
 `;
 const Paragraph2 = styled.p`
   font-size: 1.2rem;
