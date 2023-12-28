@@ -80,9 +80,9 @@ const InputFN = styled.input`
   outline: none;
   padding: 1rem 1.5rem;
   border-radius: 4px;
-  border: none;
-  box-shadow: 6px 7px 15px -10px rgba(0, 0, 0, 0.75);
-  background-color: #f5f9f3;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-left: 2px solid rgb(242, 148, 184);
+  /* box-shadow: 6px 7px 15px -10px rgba(0, 0, 0, 0.75); */
   @media only screen and (max-width: 650px) {
     width: 100%;
   }
@@ -100,9 +100,10 @@ const InputLN = styled.input`
   outline: none;
   padding: 1rem 1.5rem;
   border-radius: 4px;
-  border: none;
-  box-shadow: 6px 7px 15px -10px rgba(0, 0, 0, 0.75);
-  background-color: #f5f9f3;
+  /* border: none;
+  box-shadow: 6px 7px 15px -10px rgba(0, 0, 0, 0.75); */
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-left: 2px solid rgb(242, 148, 184);
   @media only screen and (max-width: 650px) {
     width: 100%;
   }
@@ -122,9 +123,10 @@ const InputEmail = styled.input`
   outline: none;
   padding: 1rem 1.5rem;
   border-radius: 4px;
-  border: none;
-  box-shadow: 6px 7px 15px -10px rgba(0, 0, 0, 0.75);
-  background-color: #f5f9f3;
+  /* border: none;
+  box-shadow: 6px 7px 15px -10px rgba(0, 0, 0, 0.75); */
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-left: 2px solid rgb(242, 148, 184);
 `;
 const MessageContainer = styled.div`
   display: flex;
@@ -140,18 +142,22 @@ const TextArea = styled.textarea`
   outline: none;
   border-radius: 4px;
   padding-left: 1rem;
-  border: none;
-  box-shadow: 6px 7px 15px -10px rgba(0, 0, 0, 0.75);
-  background-color: #f5f9f3;
+  /* border: none;
+  box-shadow: 6px 7px 15px -10px rgba(0, 0, 0, 0.75); */
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-left: 2px solid rgb(242, 148, 184);
 `;
 const ButtonContai = styled.div``;
 const Right = styled.div`
   flex: 1;
   width: 100%;
+  border-left: 2px solid rgb(242, 148, 184) !important;
 `;
 const ImageCntainer = styled.div`
   max-height: 70vh;
-  box-shadow: 6px 7px 15px -10px rgba(0, 0, 0, 0.75);
+  /* border: 1px solid rgba(0, 0, 0, 0.125);
+  border-left: 2px solid rgb(242, 148, 184);
+  border-radius: 4px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,8 +173,10 @@ const MailPPhoneContainer = styled.div`
   gap: 3rem;
   margin-top: 4.6rem;
   border-radius: 4px;
-  background-color: #f5f9f3;
-  box-shadow: 6px 7px 15px -10px rgba(0, 0, 0, 0.75);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-right: 1px solid rgba(0, 0, 0, 0.125) !important;
+  /* border-left: 2px solid rgb(242, 148, 184); */
 `;
 const EmailContai = styled.div`
   display: flex;

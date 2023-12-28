@@ -83,7 +83,8 @@ const Title = styled.div`
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  border: 1px solid #5f5f5f;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-left: 2px solid rgb(242, 148, 184);
   padding: 10px 15px;
   border-radius: 4px;
   font-size: 2rem;
@@ -101,7 +102,8 @@ const Spann = styled.span`
 `;
 const ContectAndPrice = styled.div`
   margin-top: 2rem;
-  border: 1px solid #5f5f5f;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-left: 2px solid rgb(242, 148, 184);
   padding: 10px 15px;
   border-radius: 4px;
 `;

@@ -59,6 +59,7 @@
   width: 30rem;
   transform: translateX(-50%);
   bottom: 0;
+  opacity: 0.7;
 }
 
 .profile-content-right {
