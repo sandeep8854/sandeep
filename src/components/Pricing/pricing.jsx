@@ -75,7 +75,7 @@ const Accordian = styled.div`
 const Item = styled.div`
   background-color: #fff;
   margin-bottom: 1.5rem;
-  padding: 1rem 2rem;
+  padding: 1rem 0rem;
 `;
 const Title = styled.div`
   color: #5f5f5f;
