@@ -3,6 +3,7 @@ import { CiMail } from "react-icons/ci";
 import { PiPhone } from "react-icons/pi";
 import ConstactImg from "../../../public/contact.png";
 import Button from "../Button/Button";
+import ButtonSubmit from "../Button/ButtonSubmit";
 const Section = styled.section`
   /* max-width: 100vw;
   height: 100vh; */
@@ -306,7 +307,7 @@ const Contact = () => {
                 placeholder="Leave us message."
               ></TextArea>
             </MessageContainer>
-            <ButtonContai>{/* future button */}</ButtonContai>
+            <ButtonSubmit />
           </Form>
         </Left>
         <Right>
