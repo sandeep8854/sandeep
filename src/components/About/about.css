@@ -1,5 +1,5 @@
 .section-about {
-  padding: 3.3rem 1.9rem;
+  padding: 7rem 0 7rem 0;
   background: #ffffff;
 }
 
@@ -12,7 +12,6 @@
 }
 .about-title {
   color: #ea4c89 !important;
-  margin-bottom: 2rem;
 }
 .page-container {
   text-align: center;
@@ -27,7 +26,7 @@
 }
 @media only screen and (max-width: 769px) {
   .section-about {
-    margin-top: 10rem;
+    /* margin-top: 7rem 0 7rem 0 !important; */
   }
 }
 @media only screen and (max-width: 768px) {
