@@ -132,7 +132,7 @@ const Content = styled.div`
   color: #5f5f5f;
   line-height: 1.5;
   @media only screen and (max-width: 768px) {
-    font-size: 12px;
+    font-size: 14px;
   }
 `;
 
