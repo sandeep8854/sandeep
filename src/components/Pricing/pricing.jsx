@@ -90,7 +90,8 @@ const Title = styled.div`
   padding: 10px 15px;
   border-radius: 4px;
   font-size: 2rem;
-  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+  /* transition: all 0.5s cubic-bezier(0, 1, 0, 1); */
+  transition: all 0.5s ease-in;
 `;
 const Para = styled.p`
   font-size: 1.6rem;
@@ -116,6 +117,7 @@ const ContectAndPrice = styled.div`
   border-left: 2px solid rgb(242, 148, 184);
   padding: 10px 15px;
   border-radius: 4px;
+  transition: all 0.5s ease-in;
   @media only screen and (max-width: 540px) {
     font-size: 1.2rem;
   }

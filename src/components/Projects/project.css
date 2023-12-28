@@ -23,7 +23,7 @@ div .project-content {
   border-left: 2px solid rgb(242, 148, 184);
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
   div .project-content {
     /* font-size: 12px; */
     width: auto;
