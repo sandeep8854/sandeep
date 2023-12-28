@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Project from "../../../public/career_progress.png";
 import { useState } from "react";
+import BestValue from "../Button/BestValue";
 const Container = styled.div`
   margin-top: 3rem;
   overflow-x: hidden;
@@ -140,6 +141,7 @@ const Pricing = () => {
       rupees: "Just for ₹6000/-",
       content:
         "Website with basic design call and email features, Show cases all your products. Online booking but offline payment no animations and databases.",
+      value: false,
     },
     {
       id: 2,
@@ -147,6 +149,7 @@ const Pricing = () => {
       rupees: "Just for ₹12000/-",
       content:
         "Website with creative design call, email and  features, Show cases all your products. Online booking but offline payment, animations added but no  databases.",
+      value: false,
     },
     {
       id: 3,
@@ -154,6 +157,7 @@ const Pricing = () => {
       rupees: "Just for ₹17000/-",
       content:
         "Website with advanced creative design call, email, whatsApp and SMS features, Show cases all your products. Online booking with online payment, animations and databases available.",
+      value: true,
     },
   ];
 
@@ -197,6 +201,7 @@ const Pricing = () => {
                   {isActive === index ? (
                     <ContectAndPrice>
                       <Rupees>{ele.rupees}</Rupees>
+                      {ele.value ? <BestValue /> : ""}
                       <Content>{ele.content}</Content>
                     </ContectAndPrice>
                   ) : (

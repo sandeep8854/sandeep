@@ -19,6 +19,7 @@
   position: relative;
   border: 2.1rem solid #32a4e7;
   margin-top: 9.5rem;
+  opacity: 0.8;
 }
 
 @media only screen and (max-width: 500px) {
@@ -50,6 +51,7 @@
   position: absolute;
   right: 81px;
   top: 138px;
+  opacity: 0.8;
   z-index: 5;
 }
 
@@ -78,6 +80,7 @@
   color: #f179a7;
   font-size: 4.3rem;
   font-weight: 700;
+  opacity: 0.8;
 }
 
 .profile-designation {
