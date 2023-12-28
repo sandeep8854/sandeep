@@ -38,7 +38,7 @@ const ParaGraph = styled.p`
   color: #fff;
   font-weight: 600;
   background-color: rgb(242, 148, 184);
-  padding: 2px 11px;
+  padding: 3px 11px;
   border-radius: 15px;
   text-transform: uppercase;
   @media only screen and (max-width: 650px) {
