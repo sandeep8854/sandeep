@@ -115,6 +115,9 @@ const ContectAndPrice = styled.div`
   border-left: 2px solid rgb(242, 148, 184);
   padding: 10px 15px;
   border-radius: 4px;
+  @media only screen and (max-width: 540px) {
+    font-size: 1.2rem;
+  }
 `;
 const Rupees = styled.div`
   font-size: 1.5rem;
