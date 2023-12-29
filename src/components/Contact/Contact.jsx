@@ -49,13 +49,13 @@ const ParaGraph = styled.p`
 `;
 const HeadingT = styled.h2`
   font-size: 2rem;
-  color: rgb(77, 77, 77);
+  color: #8d8d8d;
   margin-bottom: 1rem;
   margin-top: 1rem;
 `;
 const Paragraph2 = styled.p`
   font-size: 1.2rem;
-  color: rgb(77, 77, 77);
+  color: #8d8d8d;
   font-weight: 400;
   width: 80%;
   padding-bottom: 1rem;
@@ -69,6 +69,7 @@ const FirstLastConst = styled.div`
   gap: 40px;
   width: 100%;
   margin-bottom: 1rem;
+  color: #8d8d8d;
   @media only screen and (max-width: 650px) {
     flex-direction: column;
     gap: 5px;
@@ -80,8 +81,10 @@ const NameContainer = styled.div`
 const LableE = styled.label`
   font-size: 1.4rem;
   margin-bottom: 1rem;
+  color: #8d8d8d;
 `;
 const InputFN = styled.input`
+  color: #8d8d8d;
   background-color: #fff;
   /* border: 1px solid rgb(77, 77, 77); */
   outline: none;
@@ -102,6 +105,7 @@ const LableL = styled.label`
   margin-bottom: 1rem;
 `;
 const InputLN = styled.input`
+  color: #8d8d8d;
   background-color: #fff;
   /* border: 1px solid rgb(77, 77, 77); */
   outline: none;
@@ -120,11 +124,13 @@ const EmailContainer = styled.div`
   flex-direction: column;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  color: #8d8d8d;
 `;
 const InputL = styled.label`
   font-size: 1.4rem;
 `;
 const InputEmail = styled.input`
+  color: #8d8d8d;
   background-color: #fff;
   /* border: 1px solid rgb(77, 77, 77); */
   outline: none;
@@ -139,6 +145,7 @@ const MessageContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
+  color: #8d8d8d;
 `;
 const LableM = styled.label`
   font-size: 1.4rem;
@@ -149,6 +156,7 @@ const TextArea = styled.textarea`
   outline: none;
   border-radius: 4px;
   padding-left: 1rem;
+  color: #8d8d8d;
   /* border: none;
   box-shadow: 6px 7px 15px -10px rgba(0, 0, 0, 0.75); */
   border: 1px solid rgba(0, 0, 0, 0.125);
@@ -216,6 +224,7 @@ const EmailActual = styled.div`
 const SpanE = styled.span`
   font-size: 1.4rem;
   font-weight: 400;
+  color: #8d8d8d;
   @media only screen and (max-width: 650px) {
     font-size: 1.6rem;
     font-weight: 500;
@@ -257,6 +266,7 @@ const PhoneActual = styled.div`
 const SpanP = styled.span`
   font-size: 1.4rem;
   font-weight: 400;
+  color: #8d8d8d;
   @media only screen and (max-width: 650px) {
     font-size: 1.6rem;
     font-weight: 500;
