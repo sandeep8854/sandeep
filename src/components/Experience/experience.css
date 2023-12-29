@@ -50,13 +50,13 @@ ul,
 .designation {
   font-size: 1.6rem;
   font-weight: bold;
-  color: #4d4d4d;
+  color: #808080;
 }
 a,
 .org-name {
   text-decoration: none;
-  color: #0074cc;
+  color: #8d8d8d;
 }
 .year {
-  color: #4d4d4d;
+  color: #8d8d8d;
 }
