@@ -5,8 +5,8 @@ const ContainerBest = styled.div`
 const BestSpan = styled.span`
   background-color: #51cf66;
   display: inline;
-  font-size: 1rem;
-  color: #fff;
+  font-size: 1.2rem;
+  color: #333;
   font-weight: 600;
   padding: 2px 8px;
   border-radius: 15px !important;

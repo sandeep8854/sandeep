@@ -1,13 +1,15 @@
 import styled from "styled-components";
 import Project from "../../../public/career_progress.png";
 import { useState } from "react";
+import SimpleValue from "../Button/SimpleValue";
+import MediumValue from "../Button/MediumValue";
 import BestValue from "../Button/BestValue";
 const Container = styled.div`
   margin-top: 3rem;
   overflow-x: hidden;
 `;
 const Headingcont = styled.div`
-  margin: 3rem 0;
+  margin: 3rem 0 0 0;
 `;
 const Heading1 = styled.h1``;
 
@@ -168,6 +170,7 @@ const Pricing = () => {
   ];
 
   const [isActive, setIsActive] = useState(null);
+  const valueText = [SimpleValue, MediumValue, BestValue];
 
   function clickFunction(index) {
     if (isActive === index) {
@@ -197,6 +200,7 @@ const Pricing = () => {
       <Wrapper>
         <Accordian>
           {pricingData.map((ele, index) => {
+            const Val = valueText[index];
             return (
               <>
                 <Item>
@@ -207,7 +211,8 @@ const Pricing = () => {
                   {isActive === index ? (
                     <ContectAndPrice>
                       <Rupees>{ele.rupees}</Rupees>
-                      {ele.value ? <BestValue /> : ""}
+                      {/* {ele.value ? <BestValue /> : ""} */}
+                      <Val />
                       <Content>{ele.content}</Content>
                     </ContectAndPrice>
                   ) : (

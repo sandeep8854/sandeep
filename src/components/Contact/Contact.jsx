@@ -13,6 +13,7 @@ const Section = styled.section`
   margin-left: 2rem;
   margin-right: 2rem !important;
   margin-bottom: 2rem;
+  padding: 7rem 2rem 7rem 2rem;
 
   @media only screen and (max-width: 650px) {
     margin-left: 1rem;

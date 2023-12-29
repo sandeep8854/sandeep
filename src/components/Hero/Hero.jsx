@@ -1,14 +1,16 @@
 import SandeepImage from "../../../public/sandeep1.png";
 import "./hero.css";
-import { FaGithub, FaGitlab, FaLinkedin } from "react-icons/fa";
-import { FaHackerrank } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
-import { BsTwitterX } from "react-icons/bs";
-import { SiFreecodecamp } from "react-icons/si";
-import { PiLinkSimpleHorizontalBreak } from "react-icons/pi";
+// import { FaGithub, FaGitlab, FaLinkedin } from "react-icons/fa";
+// import { FaHackerrank } from "react-icons/fa";
+// import { SiLeetcode } from "react-icons/si";
+// import { BsTwitterX } from "react-icons/bs";
+// import { SiFreecodecamp } from "react-icons/si";
+// import { PiLinkSimpleHorizontalBreak } from "react-icons/pi";
 import Button from "../Button/Button";
+import SocialPlate from "./SocialPlate";
 
 const Hero = () => {
+  /*
   const social = [
     PiLinkSimpleHorizontalBreak,
     FaGithub,
@@ -19,7 +21,7 @@ const Hero = () => {
     BsTwitterX,
     SiFreecodecamp,
   ];
-  const socialMediaIcons = [
+ const socialMediaIcons = [
     {
       id: "Link",
       icon: "PiLinkSimpleHorizontalBreak",
@@ -77,6 +79,7 @@ const Hero = () => {
       rel: "",
     },
   ];
+  */
   return (
     <>
       <section className="profile-section">
@@ -105,12 +108,11 @@ const Hero = () => {
               <div className="profile-color-ball profile-color-ball3"></div>
             </div>
             <div className="social-container">
-              {socialMediaIcons.map((iconEle, index) => {
+              {/* {socialMediaIcons.map((iconEle, index) => {
                 const Icon = social[index];
                 return (
                   <>
                     <div className="social-media-profile">
-                      {console.log(iconEle.link)}
                       <a
                         href={iconEle.link}
                         target={iconEle.target}
@@ -122,7 +124,8 @@ const Hero = () => {
                     </div>
                   </>
                 );
-              })}
+              })} */}
+              <SocialPlate />
             </div>
             <Button />
             <div className="profile-color-ball profile-color-ball4"></div>
