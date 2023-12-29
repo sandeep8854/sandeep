@@ -10,6 +10,12 @@ const Footer = styled.footer`
 const TextContainer = styled.div`
   text-align: center;
   padding: 0 8rem;
+  @media only screen and (max-width: 650px) {
+    padding: 0 4rem;
+  }
+  @media only screen and (max-width: 421px) {
+    padding: 0 0.5rem;
+  }
 `;
 const CoverCopySocial = styled.div`
   padding: 1rem 0;
