@@ -72,14 +72,16 @@ const Wrapper = styled.div`
 const Accordian = styled.div`
   width: 100%;
   margin: 0 2rem 0 2rem;
+  transition: all 0.5s ease-in;
+
   @media only screen and (max-width: 540px) {
     width: 100%;
   }
 `;
 const Item = styled.div`
   background-color: #fff;
-  margin-bottom: 1.5rem;
-  padding: 1rem 0rem;
+  /* margin-bottom: 1.5rem;
+  padding: 1rem 0rem; */
 `;
 const Title = styled.div`
   color: #5f5f5f;
@@ -114,7 +116,7 @@ const Spann = styled.span`
   transition: background-color 225ms cubic-bezier(0.4, 0, 0.2, 1);
 `;
 const ContectAndPrice = styled.div`
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-left: 2px solid rgb(242, 148, 184);
   padding: 10px 15px;
