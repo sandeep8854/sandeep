@@ -2,8 +2,8 @@ import styled from "styled-components";
 import SocialPlate from "../Hero/SocialPlate";
 const Footer = styled.footer`
   background-color: #444;
-  padding-top: 3.5rem;
-  padding-bottom: 2rem;
+  padding-top: 6.5rem;
+  padding-bottom: 6rem;
   font-size: 1.2rem !important;
   color: #999;
 `;
@@ -51,7 +51,7 @@ const FooterSec = () => {
       <TextContainer>
         <CoverCopySocial>
           <ParaGraphFooter>
-            Copyright &#169; {year} Sandeep, All rights reserved.
+            Copyright &#169; {year} Sandeep Prajapati, All rights reserved.
           </ParaGraphFooter>
           <FollowContainer>
             <FollowText>Follow us on Social Plateform</FollowText>
