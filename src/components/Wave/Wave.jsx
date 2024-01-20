@@ -4,7 +4,7 @@ const SvGContainer = styled.div`
   padding: 0;
   margin: 0;
 
-  margin-bottom: -4px;
+  margin-bottom: -5px;
   svg {
     padding: 0;
   }
