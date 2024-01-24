@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { CiMail } from "react-icons/ci";
 import { PiPhone } from "react-icons/pi";
 import ConstactImg from "../../../public/contact.png";
@@ -33,6 +33,19 @@ const LeftRightwrapper = styled.div`
 const Left = styled.div`
   flex: 1;
   width: 100%;
+`;
+
+const horizentalShake = keyframes` 
+ 0% { transform: translateX(0) }
+ 25% { transform: translateX(5px) }
+ 50% { transform: translateX(-5px) }
+ 75% { transform: translateX(5px) }
+ 100% { transform: translateX(0) }
+`;
+const AnimateDiv = styled.div`
+  animation-name: ${horizentalShake};
+  animation-duration: 0.35s;
+  animation-iteration-count: infinite;
 `;
 const ParaGraph = styled.p`
   display: inline;
@@ -289,7 +302,9 @@ const Contact = () => {
       </Headingcont>
       <LeftRightwrapper>
         <Left>
-          <ParaGraph>Get in Touch</ParaGraph>
+          <AnimateDiv>
+            <ParaGraph>Get in Touch</ParaGraph>
+          </AnimateDiv>
           <HeadingT>Let's Chat, Reach Out to Us</HeadingT>
           <Paragraph2>
             Have questions or feedback? We are here to help. Send us a message
