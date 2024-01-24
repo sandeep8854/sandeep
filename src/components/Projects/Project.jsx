@@ -1,10 +1,14 @@
+import GithubButton from "../Button/GithubButton";
+import LinkButton from "../Button/LinkButton";
 import "./project.css";
 
 const Project = () => {
   const projectData = [
     {
-      name: "Project1",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero neque consequatur? Eius modi quasi placeat totam aut adipisci amecum",
+      name: "Developer Portfolio",
+      desc: "Software Developer Portfolio Template build with react.js and styled component that helps you showcase our work and skills as a software developer.",
+      gitHub: "https://github.com/sandeep8854/sandeep",
+      linkDemo: "https://sandeepprajapati.vercel.app/",
     },
     {
       name: "Project1",
@@ -58,6 +62,12 @@ const Project = () => {
                   <p className="project-text" key={index}>
                     {ele.desc}
                   </p>
+                  <div className="button-container">
+                    <>
+                      <GithubButton />
+                      <LinkButton />
+                    </>
+                  </div>
                 </div>
               </>
             );
