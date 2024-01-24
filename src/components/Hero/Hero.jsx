@@ -13,10 +13,10 @@ import SocialPlate from "./SocialPlate";
 const Hero = () => {
   const [text] = useTypewriter({
     words: [
-      "Fontend Engineer",
-      "Software Developer",
-      "Programmer",
-      "Problem Solver",
+      "Fontend Engineer.",
+      "Software Developer.",
+      "Programmer.",
+      "Problem Solver.",
     ],
     loop: {},
     typeSpeed: 120,
