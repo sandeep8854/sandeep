@@ -1,5 +1,6 @@
 import SandeepImage from "../../../public/sandeep1.png";
 import "./hero.css";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 // import { FaGithub, FaGitlab, FaLinkedin } from "react-icons/fa";
 // import { FaHackerrank } from "react-icons/fa";
 // import { SiLeetcode } from "react-icons/si";
@@ -10,6 +11,17 @@ import Button from "../Button/Button";
 import SocialPlate from "./SocialPlate";
 
 const Hero = () => {
+  const [text] = useTypewriter({
+    words: [
+      "Fontend Engineer",
+      "Software Developer",
+      "Programmer",
+      "Problem Solver",
+    ],
+    loop: {},
+    typeSpeed: 120,
+    deleteSpeed: 80,
+  });
   /*
   const social = [
     PiLinkSimpleHorizontalBreak,
@@ -102,7 +114,10 @@ const Hero = () => {
               <span className="profile-title-name">Sandeep</span>
             </div>
             <div className="profile-designation">
-              I'm a <span className="role">Frontend Engineer</span>
+              I'm a <span className="role">{text}</span>{" "}
+              <span className="role">
+                <Cursor />
+              </span>
               <br />
               working at Mountblue | The Mountblue Technologies
               <div className="profile-color-ball profile-color-ball3"></div>

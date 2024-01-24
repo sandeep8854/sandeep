@@ -13,7 +13,7 @@ const Anchor = styled.a`
 const GithubButton = () => {
   return (
     <ContainerGit>
-      <Anchor>Github</Anchor>
+      <Anchor>GitHub</Anchor>
     </ContainerGit>
   );
 };
