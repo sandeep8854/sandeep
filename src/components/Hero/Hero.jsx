@@ -123,7 +123,7 @@ const Hero = () => {
               <div className="profile-color-ball profile-color-ball3"></div>
             </div>
             <div className="social-container">
-              {/* {socialMediaIcons.map((iconEle, index) => {
+              {/* 44a6d3{socialMediaIcons.map((iconEle, index) => {
                 const Icon = social[index];
                 return (
                   <>
@@ -140,7 +140,7 @@ const Hero = () => {
                   </>
                 );
               })} */}
-              <SocialPlate />
+              <SocialPlate backgroundColor="#44a6d3" />
             </div>
             <Button />
             <div className="profile-color-ball profile-color-ball4"></div>

@@ -5,7 +5,8 @@ import { BsTwitterX } from "react-icons/bs";
 import { SiFreecodecamp } from "react-icons/si";
 import { PiLinkSimpleHorizontalBreak } from "react-icons/pi";
 import "./hero.css";
-const SocialPlate = () => {
+const SocialPlate = (props) => {
+  const { backgroundColor } = props;
   const social = [
     PiLinkSimpleHorizontalBreak,
     FaGithub,
@@ -80,7 +81,7 @@ const SocialPlate = () => {
         const Icon = social[index];
         return (
           <>
-            <div className="social-media-profile">
+            <div className="social-media-profile" style={{ backgroundColor }}>
               <a
                 href={iconEle.link}
                 target={iconEle.target}

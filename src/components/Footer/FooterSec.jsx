@@ -56,7 +56,7 @@ const FooterSec = () => {
           <FollowContainer>
             <FollowText>Follow us on Social Plateform</FollowText>
             <Icon>
-              <SocialPlate />
+              <SocialPlate backgroundColor="#575757" />
             </Icon>
           </FollowContainer>
         </CoverCopySocial>
