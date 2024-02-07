@@ -9,6 +9,7 @@ import Pricing from "./components/Pricing/pricing";
 import Contact from "./components/Contact/Contact";
 // import Navbar from "./components/Navbar/Navbar";
 import Wave from "./components/Wave/Wave";
+import Scroll from "./components/Scroll/Scroll";
 const App = () => {
   return (
     <div>
@@ -23,6 +24,7 @@ const App = () => {
       <Contact />
       <Wave />
       <Footer />
+      <Scroll />
     </div>
   );
 };
