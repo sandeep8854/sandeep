@@ -51,7 +51,7 @@ const FooterSec = () => {
       <TextContainer>
         <CoverCopySocial>
           <ParaGraphFooter>
-            Copyright &#169; {year} Sandeep Prajapati, All rights reserved.
+            Copyright &#169; 2023-{year} Sandeep Prajapati, All rights reserved.
           </ParaGraphFooter>
           <FollowContainer>
             <FollowText>Follow us on Social Plateform</FollowText>

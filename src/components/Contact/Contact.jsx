@@ -1,6 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import { CiMail } from "react-icons/ci";
 import { PiPhone } from "react-icons/pi";
+
 import ConstactImg from "../../../public/contact.png";
 import Button from "../Button/Button";
 import ButtonSubmit from "../Button/ButtonSubmit";

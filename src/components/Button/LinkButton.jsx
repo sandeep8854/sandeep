@@ -1,6 +1,11 @@
 import styled from "styled-components";
+import { PiLinkSimpleHorizontalBreak } from "react-icons/pi";
 const ContainerLink = styled.div``;
 const AnchorDemo = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   background-color: #f179a7;
   padding: 1rem 1.3rem;
   text-decoration: none;
@@ -14,7 +19,10 @@ const AnchorDemo = styled.a`
 const LinkButton = () => {
   return (
     <ContainerLink>
-      <AnchorDemo>Demo</AnchorDemo>
+      <AnchorDemo>
+        <PiLinkSimpleHorizontalBreak />
+        Demo
+      </AnchorDemo>
     </ContainerLink>
   );
 };

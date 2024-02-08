@@ -1,3 +1,4 @@
+import { PiLightningThin } from "react-icons/pi";
 import styled from "styled-components";
 const Container = styled.div`
   margin-top: 4rem;
@@ -31,7 +32,9 @@ const Buttonn = styled.button`
 const ButtonSubmit = () => {
   return (
     <Container className="container-btn">
-      <Buttonn>Submit</Buttonn>
+      <Buttonn>
+        Submit <PiLightningThin />
+      </Buttonn>
     </Container>
   );
 };
