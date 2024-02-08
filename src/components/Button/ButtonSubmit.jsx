@@ -11,6 +11,10 @@ const Container = styled.div`
 const Buttonn = styled.button`
   background-color: rgb(242, 148, 184);
   /* border: 1px solid #44a6d3; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
   color: #fff;
   font-weight: 400;
   line-height: 1.1;
