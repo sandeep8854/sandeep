@@ -1,4 +1,4 @@
-import { PiLightningThin } from "react-icons/pi";
+import { IoMdSend } from "react-icons/io";
 import styled from "styled-components";
 const Container = styled.div`
   margin-top: 4rem;
@@ -14,12 +14,12 @@ const Buttonn = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.3rem;
+  gap: 1rem;
   color: #fff;
   font-weight: 400;
   line-height: 1.1;
   width: max-content;
-  padding: 10px 6px;
+  padding: 10px 1.5rem;
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
@@ -37,7 +37,7 @@ const ButtonSubmit = () => {
   return (
     <Container className="container-btn">
       <Buttonn>
-        Submit <PiLightningThin />
+        Submit <IoMdSend />
       </Buttonn>
     </Container>
   );
