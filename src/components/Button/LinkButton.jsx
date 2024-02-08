@@ -14,6 +14,7 @@ const AnchorDemo = styled.a`
   text-align: center;
   cursor: pointer;
   border-radius: 3px;
+  letter-spacing: 1px;
 `;
 
 const LinkButton = () => {
