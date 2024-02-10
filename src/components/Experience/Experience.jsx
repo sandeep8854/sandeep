@@ -1,4 +1,5 @@
 import "./experience.css";
+import Exp from "../../../public/experience.png";
 
 const Experience = () => {
   const experienceData = [
@@ -40,7 +41,18 @@ const Experience = () => {
   ];
   return (
     <section className="section-experience">
-      <h1 className="titleExperience experience-title">My Work Experience ~</h1>
+      <div className="exp">
+        <span className="iconReactE">
+          <img
+            className="iconPng"
+            src={Exp}
+            alt="image not found in experience"
+          />
+        </span>
+        <h1 className="titleExperience experience-title">
+          My Work Experience ~
+        </h1>
+      </div>
       {experienceData.map((ele, index) => {
         return (
           <>

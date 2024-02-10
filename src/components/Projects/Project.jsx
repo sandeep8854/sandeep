@@ -1,6 +1,7 @@
 import GithubButton from "../Button/GithubButton";
 import LinkButton from "../Button/LinkButton";
 import "./project.css";
+import { GoProjectSymlink } from "react-icons/go";
 
 const Project = () => {
   const projectData = [
@@ -63,7 +64,12 @@ const Project = () => {
   return (
     <>
       <section className="section-project">
-        <h1 className="headingProj">Projects ~</h1>
+        <div className="projectCont">
+          <span className="iconReactP">
+            <GoProjectSymlink />
+          </span>
+          <h1 className="headingProj">Projects ~</h1>
+        </div>
         <div className="project-wrapper">
           {projectData.map((ele, index) => {
             return (

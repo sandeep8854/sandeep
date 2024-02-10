@@ -2,13 +2,33 @@
   padding: 7rem 2rem 7rem 2rem;
   background: #fff;
 }
+.projectCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.iconReactP {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.5rem;
+  width: 5.5rem;
+  border-radius: 50%;
+  font-size: 3.5rem;
+  color: #ea4c89;
+  background-color: rgb(250, 212, 227);
+  transition: background-color 225ms cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+}
 h1,
 .headingProj {
   font-size: 3.5rem;
   text-align: center;
   margin: 0;
   color: #ea4c89;
-  margin-bottom: 3rem !important;
+  /* margin-bottom: 3rem !important; */
   opacity: 0.8;
 }
 div .project-content {
@@ -41,6 +61,7 @@ h4,
   color: #808080;
   font-weight: 300;
   padding-bottom: 3rem;
+  word-spacing: 5px;
 }
 .project-wrapper {
   display: flex;

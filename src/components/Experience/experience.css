@@ -2,12 +2,33 @@
   padding: 7rem 2rem 0 2rem;
   background: #fff;
 }
-
+.exp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+.iconReactE {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.5rem;
+  width: 5.5rem;
+  border-radius: 50%;
+  color: #ea4c89;
+  background-color: rgb(250, 212, 227);
+  transition: background-color 225ms cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+}
+.iconPng {
+  height: 3.5rem;
+  width: 3.5rem;
+  color: #ea4c89;
+}
 .experience-title {
   font-size: 3.5rem;
   text-align: center;
   color: #ea4c89;
-  margin-bottom: 3rem;
   opacity: 0.8;
 }
 .progress-wrapper {

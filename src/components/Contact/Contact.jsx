@@ -1,6 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import { CiMail } from "react-icons/ci";
 import { PiPhone } from "react-icons/pi";
+import { LuContact } from "react-icons/lu";
 
 import ConstactImg from "../../../public/contact.png";
 import Button from "../Button/Button";
@@ -20,7 +21,25 @@ const Section = styled.section`
     margin-left: 1rem;
   }
 `;
-const Headingcont = styled.div``;
+const Headingcont = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+`;
+const SpanContact = styled.span`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.5rem;
+  width: 5.5rem;
+  border-radius: 50%;
+  font-size: 3.5rem;
+  color: #ea4c89;
+  background-color: rgb(250, 212, 227);
+  transition: background-color 225ms cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+`;
 const Heading1 = styled.h1`
   text-align: center !important;
 `;
@@ -73,6 +92,7 @@ const Paragraph2 = styled.p`
   font-weight: 400;
   width: 80%;
   padding-bottom: 1rem;
+  word-spacing: 5px;
   @media only screen and (max-width: 650px) {
     font-size: 1.6rem;
   }
@@ -299,6 +319,9 @@ const Contact = () => {
   return (
     <Section>
       <Headingcont>
+        <SpanContact>
+          <LuContact />
+        </SpanContact>
         <Heading1>Contact Us ~</Heading1>
       </Headingcont>
       <LeftRightwrapper>

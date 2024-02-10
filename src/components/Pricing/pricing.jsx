@@ -4,12 +4,31 @@ import { useState } from "react";
 import SimpleValue from "../Button/SimpleValue";
 import MediumValue from "../Button/MediumValue";
 import BestValue from "../Button/BestValue";
+import { MdOutlineCurrencyRupee } from "react-icons/md";
+
 const Container = styled.div`
   margin-top: 3rem;
   overflow-x: hidden;
 `;
 const Headingcont = styled.div`
   margin: 3rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+`;
+const SpanIcon = styled.span`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.5rem;
+  width: 5.5rem;
+  border-radius: 50%;
+  font-size: 3.5rem;
+  color: #ea4c89;
+  background-color: rgb(250, 212, 227);
+  transition: background-color 225ms cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
 `;
 const Heading1 = styled.h1``;
 
@@ -43,6 +62,7 @@ const Paragraph = styled.p`
   font-size: 1.6rem;
   color: #4d4d4d;
   line-height: 1.8;
+  word-spacing: 5px;
   @media only screen and (max-width: 540px) {
     font-size: 13px;
     width: 100%;
@@ -183,6 +203,9 @@ const Pricing = () => {
   return (
     <Container>
       <Headingcont>
+        <SpanIcon>
+          <MdOutlineCurrencyRupee />
+        </SpanIcon>
         <Heading1>Pricing Available ~</Heading1>
       </Headingcont>
       <ImageContainer>

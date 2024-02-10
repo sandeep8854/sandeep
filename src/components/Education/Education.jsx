@@ -1,4 +1,5 @@
 import "./education.css";
+import { BsFillMortarboardFill } from "react-icons/bs";
 
 const Education = () => {
   const qualification = [
@@ -26,7 +27,12 @@ const Education = () => {
   ];
   return (
     <section className="section-education">
-      <h1 className="edu-title">Education ~</h1>
+      <div className="eduCont">
+        <span className="iconreactEd">
+          <BsFillMortarboardFill />
+        </span>
+        <h1 className="edu-title">Education ~</h1>
+      </div>
 
       {qualification.map((ele, index) => {
         return (
