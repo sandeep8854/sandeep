@@ -64,7 +64,7 @@
   left: -36px;
 }
 
-ul,
+.step-progress,
 .step-progress-item:not(:last-child) {
   padding-bottom: 2rem;
 }
