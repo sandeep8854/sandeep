@@ -6,6 +6,19 @@ import { LuContact } from "react-icons/lu";
 import ConstactImg from "../../../public/contact.png";
 import Button from "../Button/Button";
 import ButtonSubmit from "../Button/ButtonSubmit";
+
+const float = keyframes`
+from{
+transform: translate(0px,0px);
+}
+65%{
+  transform: translate(0px,10px);
+}
+to{
+  transform: translate(0px,0px);
+}
+`;
+
 const Section = styled.section`
   /* max-width: 100vw;
   height: 100vh; */
@@ -63,7 +76,7 @@ const horizentalShake = keyframes`
  100% { transform: translateX(0) }
 `;
 const AnimateDiv = styled.div`
-  animation-name: ${horizentalShake};
+  /* animation-name: ${horizentalShake}; */
   animation-duration: 0.35s;
   animation-iteration-count: infinite;
 `;
@@ -87,7 +100,7 @@ const HeadingT = styled.h2`
   margin-top: 1rem;
 `;
 const Paragraph2 = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #8d8d8d;
   font-weight: 400;
   width: 80%;
@@ -216,6 +229,7 @@ const Image = styled.img`
   width: 100%;
   max-width: 40rem;
   height: auto;
+  animation: ${float} 3s ease-in-out infinite;
 `;
 const MailPPhoneContainer = styled.div`
   display: flex;

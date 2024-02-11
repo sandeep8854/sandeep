@@ -6,15 +6,21 @@ const Anchor = styled.a`
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  background-color: #f179a7;
+  /* background-color: #f179a7; */
   padding: 1rem 1.3rem;
   text-decoration: none;
-  color: white;
+  color: #f179a7;
   font-size: 1.5rem;
   text-align: center;
   cursor: pointer;
   border-radius: 3px;
   letter-spacing: 1px;
+  border: 1px solid #fbd7e5;
+  &:hover {
+    background-color: #fbd7e5;
+    transition: all 650ms ease-in-out;
+    border: 1px solid #fbd7e5;
+  }
 `;
 const GithubButton = () => {
   return (

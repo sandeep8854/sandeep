@@ -17,17 +17,23 @@ const Buttonn = styled.button`
   gap: 1rem;
   color: #fff;
   font-weight: 400;
-  line-height: 1.1;
+  /* line-height: 1.1; */
   width: max-content;
-  padding: 10px 1.5rem;
+  padding: 1rem 3rem;
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
   letter-spacing: 1px;
-  font-size: 14px;
+  font-size: 1.5rem;
   outline: none;
-  border: none;
+  border: 1px solid #f1719a;
+  &:hover {
+    background-color: #fff;
+    color: #f1719a;
+    border: 1px solid #f1719a;
+    transition: all 650ms ease-in-out;
+  }
   @media only screen and (max-width: 500px) {
     width: 100%;
   }

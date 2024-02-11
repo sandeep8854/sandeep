@@ -1,10 +1,22 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Project from "../../../public/career_progress.png";
 import { useState } from "react";
 import SimpleValue from "../Button/SimpleValue";
 import MediumValue from "../Button/MediumValue";
 import BestValue from "../Button/BestValue";
 import { MdOutlineCurrencyRupee } from "react-icons/md";
+
+const float = keyframes`
+from{
+transform: translate(0px,0px);
+}
+65%{
+  transform: translate(0px,10px);
+}
+to{
+  transform: translate(0px,0px);
+}
+`;
 
 const Container = styled.div`
   margin-top: 3rem;
@@ -50,6 +62,7 @@ const Image = styled.img`
   width: 100%;
   max-width: 40rem;
   height: auto;
+  animation: ${float} 3s ease-in-out infinite;
 `;
 
 const AboutBusiness = styled.div`
@@ -85,6 +98,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 650ms ease-in-out;
   @media only screen and (max-width: 581px) {
     margin-top: 2rem;
   }
@@ -92,7 +106,7 @@ const Wrapper = styled.div`
 const Accordian = styled.div`
   width: 100%;
   margin: 0 2rem 0 2rem;
-  transition: all 0.5s ease-in;
+  transition: all 650ms ease-in-out;
 
   @media only screen and (max-width: 540px) {
     width: 100%;
@@ -100,6 +114,7 @@ const Accordian = styled.div`
 `;
 const Item = styled.div`
   background-color: #fff;
+  transition: all 650ms ease-in-out;
   /* margin-bottom: 1.5rem;
   padding: 1rem 0rem; */
 `;
@@ -115,10 +130,11 @@ const Title = styled.div`
   border-radius: 4px;
   font-size: 2rem;
   /* transition: all 0.5s cubic-bezier(0, 1, 0, 1); */
-  transition: all 0.5s ease-in;
+  transition: all 650ms ease-in-out;
 `;
 const Para = styled.p`
   font-size: 1.6rem;
+  transition: all 650ms ease-in-out;
   @media only screen and (max-width: 540px) {
     font-size: 14px;
   }
@@ -133,7 +149,7 @@ const Spann = styled.span`
   border-radius: 50%;
   text-align: center;
   line-height: 30px;
-  transition: background-color 225ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 650ms ease-in-out;
 `;
 const ContectAndPrice = styled.div`
   /* margin-top: 2rem; */
@@ -141,7 +157,8 @@ const ContectAndPrice = styled.div`
   border-left: 2px solid rgb(242, 148, 184);
   padding: 10px 15px;
   border-radius: 4px;
-  transition: all 0.5s ease-in;
+
+  transition: all 650ms ease-in-out;
   @media only screen and (max-width: 540px) {
     font-size: 1.2rem;
   }
@@ -150,6 +167,7 @@ const Rupees = styled.div`
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 1rem;
+  transition: all 650ms ease-in-out;
   @media only screen and (max-width: 540px) {
     font-size: 15px;
   }
@@ -158,35 +176,66 @@ const Content = styled.div`
   font-size: 1.2rem;
   color: #5f5f5f;
   line-height: 1.5;
+
+  transition: all 650ms ease-in-out;
   @media only screen and (max-width: 768px) {
     font-size: 13px;
   }
 `;
-
+const NewPara = styled.p`
+  font-size: 1.4rem;
+  line-height: 1.6;
+`;
 const Pricing = () => {
   const pricingData = [
     {
       id: 1,
       title: "Basic",
       rupees: "Just for ₹6000/-",
-      content:
-        "Website with basic design call and email features, Show cases all your products. Online booking but offline payment no animations and databases.",
+      content: [
+        "✅ Website with basic design.",
+        "✅ Call, Email and features.",
+        "✅ Show cases all your products.",
+        "✅ Offline payment.",
+        "✅ No animations.",
+        "✅ No databases.",
+      ],
+      // content:
+      //   "Website with basic design call and email features, Show cases all your products. Online booking but offline payment no animations and databases.",
       value: false,
     },
     {
       id: 2,
       title: "Moderate",
       rupees: "Just for ₹12000/-",
-      content:
-        "Website with creative design call, email and  features, Show cases all your products. Online booking but offline payment, animations added but no  databases.",
+      content: [
+        "✅ Website with creative design.",
+        "✅ Call, Email and features.",
+        "✅ Show cases all your products.",
+        "✅ Online booking but Offline payment.",
+        "✅ Animations added.",
+        "✅ No databases.",
+      ],
+      // content:
+      //   "Website with creative design call, email and  features, Show cases all your products. Online booking but offline payment, animations added but no  databases.",
       value: false,
     },
     {
       id: 3,
       title: "Advanced",
       rupees: "Just for ₹17000/-",
-      content:
-        "Website with advanced creative design call, email, whatsApp and SMS features, Show cases all your products. Online booking with online payment, animations and databases available.",
+      content: [
+        "✅ Website with Advanced design.",
+        "✅ Call, Email and features.",
+        "✅ WhatsApp and SMS features.",
+        "✅ Show cases all your products.",
+        "✅ Online booking.",
+        "✅ Online payment.",
+        "✅ Animations Added.",
+        "✅ Databases added.",
+      ],
+      // content:
+      //   "Website with advanced creative design call, email, whatsApp and SMS features, Show cases all your products. Online booking with online payment, animations and databases available."
       value: true,
     },
   ];
@@ -238,7 +287,11 @@ const Pricing = () => {
                       <Rupees>{ele.rupees}</Rupees>
                       {/* {ele.value ? <BestValue /> : ""} */}
                       <Val />
-                      <Content>{ele.content}</Content>
+                      <Content>
+                        {ele.content.map((el) => (
+                          <NewPara key={el}>{el}</NewPara>
+                        ))}
+                      </Content>
                     </ContectAndPrice>
                   ) : (
                     <Para />

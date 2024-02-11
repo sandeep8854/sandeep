@@ -15,6 +15,13 @@ const AnchorDemo = styled.a`
   cursor: pointer;
   border-radius: 3px;
   letter-spacing: 1px;
+  border: 1px solid #f179a7;
+  &:hover {
+    background-color: #fbd7e5;
+    color: #f1719a;
+    border: 1px solid #f1719a;
+    transition: all 650ms ease-in-out;
+  }
 `;
 
 const LinkButton = () => {

@@ -9,9 +9,9 @@ const Container = styled.div`
   }
 `;
 const Link = styled.a`
-  background-color: #44a6d3;
+  background-color: #ffffff;
   border: 1px solid #44a6d3;
-  color: #fff;
+  color: #44a6d3;
   font-weight: 500;
   line-height: 1.1;
   width: max-content;
@@ -22,6 +22,11 @@ const Link = styled.a`
   cursor: pointer;
   letter-spacing: 1px;
   font-size: 16px;
+  &:hover {
+    background-color: #44a6d3;
+    color: #ffffff;
+    transition: all 650ms ease-in-out;
+  }
   @media only screen and (max-width: 500px) {
   }
 `;
