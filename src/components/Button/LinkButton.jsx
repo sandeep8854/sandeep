@@ -6,7 +6,7 @@ const AnchorDemo = styled.a`
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  background-color: #f179a7;
+  background-color: #f294b8;
   padding: 1rem 1.3rem;
   text-decoration: none;
   color: white;
@@ -15,7 +15,7 @@ const AnchorDemo = styled.a`
   cursor: pointer;
   border-radius: 3px;
   letter-spacing: 1px;
-  border: 1px solid #f179a7;
+  border: 1px solid #f294b8;
   &:hover {
     background-color: #fbd7e5;
     color: #f1719a;
