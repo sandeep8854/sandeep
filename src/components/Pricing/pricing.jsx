@@ -185,6 +185,9 @@ const Content = styled.div`
 const NewPara = styled.p`
   font-size: 1.4rem;
   line-height: 1.6;
+  @media only screen and (max-width: 540px) {
+    font-size: 13px;
+  }
 `;
 const Pricing = () => {
   const pricingData = [
