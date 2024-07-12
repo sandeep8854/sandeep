@@ -28,6 +28,10 @@ const Link = styled.a`
     transition: all 650ms ease-in-out;
   }
   @media only screen and (max-width: 500px) {
+    border-radius: 0px;
+    margin: 0 2rem 0 2rem;
+    width: 85%;
+    padding: 1.5rem 0 1.5rem 0;
   }
 `;
 
