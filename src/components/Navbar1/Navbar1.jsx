@@ -1,5 +1,5 @@
 import styled, { keyframes, css } from "styled-components";
-import LogoImg from "../../../public/logoSandeep.png";
+import LogoImg2 from "../../../public/sandeep-logo.png";
 import { useState } from "react";
 import navlinkData from "./navlinkData";
 import programmer from "../../../public/programmer.png";
@@ -176,7 +176,7 @@ const Navbar1 = () => {
     <Nav>
       <LogoContainer>
         <AnchorTag href="#Hero">
-          <ImageLogo src={LogoImg} alt="image not found" />
+          <ImageLogo src={LogoImg2} alt="image not found" />
         </AnchorTag>
       </LogoContainer>
       <MenuIcon onClick={callingFunction}>
