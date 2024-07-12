@@ -9,7 +9,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 // import { PiLinkSimpleHorizontalBreak } from "react-icons/pi";
 import Button from "../Button/Button";
 import SocialPlate from "./SocialPlate";
-
+// import svgImg from "../../../public/hero-pattern-mweb.svg";
 const Hero = () => {
   const [text] = useTypewriter({
     words: [
