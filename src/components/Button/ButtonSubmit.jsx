@@ -36,6 +36,8 @@ const Buttonn = styled.button`
   }
   @media only screen and (max-width: 500px) {
     width: 100%;
+    padding: 1.5rem 3rem;
+    border-radius: 0px;
   }
 `;
 
