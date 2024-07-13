@@ -1,5 +1,6 @@
 import { TfiInfoAlt } from "react-icons/tfi";
 import "./about.css";
+import Leaf from "../Leaf/Leaf.jsx";
 
 const About = () => {
   return (
@@ -10,6 +11,7 @@ const About = () => {
         </span>
         <h1 className="section-title about-title">Little About Me ~</h1>
       </div>
+      <Leaf />
 
       <div className="page-container">
         <p className="about-content">

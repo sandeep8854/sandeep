@@ -18,7 +18,7 @@
   position: absolute;
   background-image: url(../../../public/hero-pattern-mweb.svg);
   top: 16.6rem;
-  right: -88px;
+  right: 0px;
   width: 50%;
   height: 100%;
   background-repeat: no-repeat;
@@ -36,7 +36,7 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
 }
 .iconReactE {
   display: flex;

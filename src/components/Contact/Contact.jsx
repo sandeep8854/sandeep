@@ -6,6 +6,7 @@ import { LuContact } from "react-icons/lu";
 import ConstactImg from "../../../public/contact.png";
 import Button from "../Button/Button";
 import ButtonSubmit from "../Button/ButtonSubmit";
+import Leaf from "../Leaf/Leaf.jsx";
 
 const float = keyframes`
 from{
@@ -39,7 +40,7 @@ const Headingcont = styled.div`
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
 `;
 const SpanContact = styled.span`
   display: flex;
@@ -338,6 +339,7 @@ const Contact = () => {
         </SpanContact>
         <Heading1>Contact Us ~</Heading1>
       </Headingcont>
+      <Leaf />
       <LeftRightwrapper>
         <Left>
           <AnimateDiv>

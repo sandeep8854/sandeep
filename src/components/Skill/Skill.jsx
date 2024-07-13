@@ -13,6 +13,7 @@ import Dsa from "../../../public/dsa.jpg";
 import Saas from "../../../public/saas.png";
 import Jdbc from "../../../public/jdbc.jpeg";
 import { GiSkills } from "react-icons/gi";
+import Leaf from "../Leaf/Leaf.jsx";
 
 const tech = [
   Java,
@@ -105,6 +106,7 @@ const Skill = () => {
         </span>
         <h1 className="section-title temp">Skills ~</h1>
       </div>
+      <Leaf />
       <div className="skills-item-wrapper">
         {skills.map((ele, index) => {
           return (

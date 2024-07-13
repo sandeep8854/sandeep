@@ -2,6 +2,7 @@ import GithubButton from "../Button/GithubButton";
 import LinkButton from "../Button/LinkButton";
 import "./project.css";
 import { GoProjectSymlink } from "react-icons/go";
+import Leaf from "../Leaf/Leaf.jsx";
 
 const Project = () => {
   const projectData = [
@@ -70,6 +71,7 @@ const Project = () => {
           </span>
           <h1 className="headingProj">Projects ~</h1>
         </div>
+        <Leaf />
         <div className="project-wrapper">
           {projectData.map((ele, index) => {
             return (

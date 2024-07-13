@@ -1,5 +1,6 @@
 import "./experience.css";
 import Exp from "../../../public/experience.png";
+import Leaf from "../Leaf/Leaf.jsx";
 
 const Experience = () => {
   const experienceData = [
@@ -60,6 +61,7 @@ const Experience = () => {
           My Work Experience ~
         </h1>
       </div>
+      <Leaf />
       {experienceData.map((ele, index) => {
         return (
           <>

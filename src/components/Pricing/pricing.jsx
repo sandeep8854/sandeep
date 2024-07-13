@@ -5,6 +5,7 @@ import SimpleValue from "../Button/SimpleValue";
 import MediumValue from "../Button/MediumValue";
 import BestValue from "../Button/BestValue";
 import { MdOutlineCurrencyRupee } from "react-icons/md";
+import Leaf from "../Leaf/Leaf.jsx";
 
 const float = keyframes`
 from{
@@ -28,7 +29,7 @@ const Headingcont = styled.div`
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
 `;
 const SpanIcon = styled.span`
   display: flex;
@@ -260,6 +261,7 @@ const Pricing = () => {
         </SpanIcon>
         <Heading1>Pricing Available ~</Heading1>
       </Headingcont>
+      <Leaf />
       <ImageContainer>
         <ImageSection>
           <Image src={Project} alt="Image not found" />

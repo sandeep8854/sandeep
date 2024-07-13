@@ -1,5 +1,6 @@
 import "./education.css";
 import { BsFillMortarboardFill } from "react-icons/bs";
+import Leaf from "../Leaf/Leaf.jsx";
 
 const Education = () => {
   const qualification = [
@@ -33,6 +34,7 @@ const Education = () => {
         </span>
         <h1 className="edu-title">Education ~</h1>
       </div>
+      <Leaf />
 
       {qualification.map((ele, index) => {
         return (
