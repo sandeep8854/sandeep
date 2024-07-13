@@ -1,6 +1,37 @@
 .section-about {
   padding: 7rem 0 7rem 0;
   background: #ffffff;
+  position: relative;
+}
+.section-about::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../../public/hero-pattern-mweb.svg);
+  top: -10.4rem;
+  left: -52px;
+  width: 35rem;
+  height: 39rem;
+}
+.section-about::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../../public/hero-pattern-mweb.svg);
+  top: -10.4rem;
+  right: 15px;
+  width: 35rem;
+  height: 39rem;
+}
+@media only screen and (max-width: 500px) {
+  .section-about::before {
+    top: -24rem;
+    width: 100%;
+    height: 68%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .section-about::after {
+    display: none;
+  }
 }
 .titleHead {
   display: flex;
