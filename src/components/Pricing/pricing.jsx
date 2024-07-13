@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import Project from "../../../public/career_progress.png";
+import Project from "../../../public/project_find.png";
 import { useState } from "react";
 import SimpleValue from "../Button/SimpleValue";
 import MediumValue from "../Button/MediumValue";

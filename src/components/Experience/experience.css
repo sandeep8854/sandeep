@@ -1,6 +1,35 @@
 .section-experience {
   padding: 7rem 2rem 0 2rem;
   background: #fff;
+  position: relative;
+}
+.section-experience::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../../public/hero-pattern-mweb.svg);
+  top: 16.6rem;
+  left: -88px;
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.section-experience::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../../public/hero-pattern-mweb.svg);
+  top: 16.6rem;
+  right: -88px;
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 500px) {
+  .section-experience::before {
+    display: none;
+  }
+  .section-experience::after {
+    display: none;
+  }
 }
 .exp {
   display: flex;

@@ -22,6 +22,10 @@ const AnchorDemo = styled.a`
     border: 1px solid #f1719a;
     transition: all 650ms ease-in-out;
   }
+  @media only screen and (max-width: 500px) {
+    padding: 1.5rem 4rem;
+    border-radius: 0px;
+  }
 `;
 
 const LinkButton = () => {

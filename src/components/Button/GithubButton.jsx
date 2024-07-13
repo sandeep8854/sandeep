@@ -21,6 +21,10 @@ const Anchor = styled.a`
     transition: all 650ms ease-in-out;
     border: 1px solid #fbd7e5;
   }
+  @media only screen and (max-width: 500px) {
+    padding: 1.5rem 4rem;
+    border-radius: 0px;
+  }
 `;
 const GithubButton = () => {
   return (

@@ -4,10 +4,17 @@ import Exp from "../../../public/experience.png";
 const Experience = () => {
   const experienceData = [
     {
+      designation: "Senior Customer Executive",
+      link: "https://www.iccs-bpo.com/",
+      company: "Insight Customer Call Solutions Limited",
+      year: "Feb 2024 - Jun 2024",
+      target: "_blank",
+    },
+    {
       designation: "Verification Team",
       link: "https://smartcoin.co.in/",
       company: "SmartCoin Financials Pvt. Ltd",
-      year: "May 2023 - Present",
+      year: "May 2023 - Feb 2024",
       target: "_blank",
     },
     {

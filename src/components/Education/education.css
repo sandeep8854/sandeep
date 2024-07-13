@@ -1,3 +1,34 @@
+.section-education {
+  position: relative;
+}
+.section-education::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../../public/hero-pattern-mweb.svg);
+  top: 2.6rem;
+  left: -88px;
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.section-education::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../../public/hero-pattern-mweb.svg);
+  top: 2.6rem;
+  right: -88px;
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 500px) {
+  .section-experience::before {
+    display: none;
+  }
+  .section-experience::after {
+    display: none;
+  }
+}
 .passing-year {
   color: #8d8d8d;
 }
