@@ -21,45 +21,11 @@ const Project = () => {
       target: "_blank",
     },
     {
-      name: "Redux Bank Account",
-      desc: "In this project user can perform all opreation like as Open an account, deposit, withdraw, request for Loan, payLoan and etc.",
-      gitHub: "https://github.com/sandeep8854/redux-intro",
-      linkDemo: "https://redux-intro-two.vercel.app/",
-      target: "_blank",
-    },
-    {
       name: "Travel List",
       desc: "In this project user can add the items, delete the items and also and sort the item based on descrieption, input order and packed status.",
       gitHub: "https://github.com/sandeep8854/travel-list",
       linkDemo: "https://travel-list-sandeep.vercel.app/",
       target: "_blank",
-    },
-    {
-      name: "React Admin Dashboard",
-      desc: "An admin dashboard is a component of a control panel that gives users access to data, reports, and metrics all employee information.",
-      gitHub: "https://github.com/sandeep8854/react-admin-dashboard",
-      linkDemo: "https://admin-dashboard-sandeep.vercel.app/",
-      target: "_blank",
-    },
-    {
-      name: "Project1",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero neque consequatur? Eius modi quasi placeat totam aut adipisci amecum",
-    },
-    {
-      name: "Project1",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero neque consequatur? Eius modi quasi placeat totam aut adipisci amecum",
-    },
-    {
-      name: "Project1",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero neque consequatur? Eius modi quasi placeat totam aut adipisci amecum",
-    },
-    {
-      name: "Project1",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero neque consequatur? Eius modi quasi placeat totam aut adipisci amecum",
-    },
-    {
-      name: "Project1",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero neque consequatur? Eius modi quasi placeat totam aut adipisci amecum",
     },
   ];
   return (

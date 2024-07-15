@@ -1,6 +1,7 @@
 import "./education.css";
 import { BsFillMortarboardFill } from "react-icons/bs";
 import Leaf from "../Leaf/Leaf.jsx";
+import EducationImage from "../../../public/education-image.png";
 
 const Education = () => {
   const qualification = [
@@ -35,26 +36,32 @@ const Education = () => {
         <h1 className="edu-title">Education ~</h1>
       </div>
       <Leaf />
-
-      {qualification.map((ele, index) => {
-        return (
-          <>
-            <div className="progress-wrapper">
-              <ul className="step-progress">
-                <li className="step-progress-item" key={index}>
-                  <p className="designation">{ele.designation} </p>
-                  <span className="passing-year">{ele.passingYear}</span>
-                  <p className="org-name">
-                    <a href={ele.link} target={ele.target}>
-                      {ele.name}
-                    </a>
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </>
-        );
-      })}
+      <div className="educationAndImageContainer">
+        <div className="image-container">
+          <img src={EducationImage} alt="education image not found" />
+        </div>
+        <div className="education-container">
+          {qualification.map((ele, index) => {
+            return (
+              <>
+                <div className="progress-wrapper">
+                  <ul className="step-progress">
+                    <li className="step-progress-item" key={index}>
+                      <p className="designation">{ele.designation} </p>
+                      <span className="passing-year">{ele.passingYear}</span>
+                      <p className="org-name">
+                        <a href={ele.link} target={ele.target}>
+                          {ele.name}
+                        </a>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </>
+            );
+          })}
+        </div>
+      </div>
     </section>
   );
 };

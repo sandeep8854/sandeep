@@ -1,6 +1,7 @@
 import "./experience.css";
 import Exp from "../../../public/experience.png";
 import Leaf from "../Leaf/Leaf.jsx";
+import ExpImg from "../../../public/work-exprience.png";
 
 const Experience = () => {
   const experienceData = [
@@ -62,25 +63,33 @@ const Experience = () => {
         </h1>
       </div>
       <Leaf />
-      {experienceData.map((ele, index) => {
-        return (
-          <>
-            <div className="progress-wrapper">
-              <ul className="step-progress" key={index}>
-                <li className="step-progress-item">
-                  <p className="designation">{ele.designation}</p>
-                  <p className="org-name">
-                    <a href={ele.link} target={ele.target} rel="">
-                      {ele.company}
-                    </a>
-                  </p>
-                  <p className="year">{ele.year}</p>
-                </li>
-              </ul>
-            </div>
-          </>
-        );
-      })}
+      <div className="expperienceAndImageContainer">
+        <div className="experience-image">
+          <img src={ExpImg} alt="experience image not found" />
+        </div>
+
+        <div className="experience-container">
+          {experienceData.map((ele, index) => {
+            return (
+              <>
+                <div className="progress-wrapper">
+                  <ul className="step-progress" key={index}>
+                    <li className="step-progress-item">
+                      <p className="designation">{ele.designation}</p>
+                      <p className="org-name">
+                        <a href={ele.link} target={ele.target} rel="">
+                          {ele.company}
+                        </a>
+                      </p>
+                      <p className="year">{ele.year}</p>
+                    </li>
+                  </ul>
+                </div>
+              </>
+            );
+          })}
+        </div>
+      </div>
     </section>
   );
 };

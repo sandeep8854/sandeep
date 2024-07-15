@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import Project from "../../../public/project_find.png";
+import AccImage from "../../../public/accforSideImage.png";
 import { useState } from "react";
 import SimpleValue from "../Button/SimpleValue";
 import MediumValue from "../Button/MediumValue";
@@ -97,16 +98,23 @@ const Cheers = styled.span`
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin: 0 2rem 0 2rem;
   transition: all 650ms ease-in-out;
   @media only screen and (max-width: 581px) {
     margin-top: 2rem;
+    flex-direction: column-reverse;
+  }
+  @media only screen and (max-width: 500px) {
+    flex-direction: column-reverse;
   }
 `;
 const Accordian = styled.div`
-  width: 100%;
-  margin: 0 2rem 0 2rem;
+  flex: 1.2;
+  align-items: center;
+  margin: 0 0 0 2rem;
   transition: all 650ms ease-in-out;
 
   @media only screen and (max-width: 540px) {
@@ -190,6 +198,20 @@ const NewPara = styled.p`
     font-size: 13px;
   }
 `;
+const ImageConatinerAcc = styled.div`
+  flex: 1;
+  @media only screen and (max-width: 500px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`;
+const ImageAcc = styled.img`
+  width: 100%;
+  max-width: 50%;
+  height: auto;
+`;
+
 const Pricing = () => {
   const pricingData = [
     {
@@ -306,6 +328,9 @@ const Pricing = () => {
             );
           })}
         </Accordian>
+        <ImageConatinerAcc>
+          <ImageAcc src={AccImage} alt="image not found" />
+        </ImageConatinerAcc>
       </Wrapper>
     </Container>
   );

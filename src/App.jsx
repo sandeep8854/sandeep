@@ -8,7 +8,7 @@ import Footer from "./components/Footer/FooterSec";
 import Pricing from "./components/Pricing/pricing";
 import Contact from "./components/Contact/Contact";
 
-import Wave from "./components/Wave/Wave";
+// import Wave from "./components/Wave/Wave";
 import Scroll from "./components/Scroll/Scroll";
 import Navbar1 from "./components/Navbar1/Navbar1";
 const App = () => {
@@ -23,7 +23,7 @@ const App = () => {
       <Education />
       <Pricing />
       <Contact />
-      <Wave />
+      {/* <Wave /> */}
       <Footer />
       <Scroll />
     </div>

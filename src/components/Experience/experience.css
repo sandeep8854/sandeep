@@ -60,8 +60,28 @@
   color: #ea4c89;
   opacity: 0.8;
 }
+.expperienceAndImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  @media only screen and (max-width: 500px) {
+    flex-direction: column;
+  }
+}
+.experience-image {
+  flex: 1;
+}
+.experience-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.experience-container {
+  flex: 1.5;
+}
 .progress-wrapper {
-  width: 330px;
+  /* width: 330px; */
   margin: auto;
 }
 .step-progress {

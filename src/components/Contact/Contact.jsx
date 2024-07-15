@@ -125,10 +125,15 @@ const FirstLastConst = styled.div`
 `;
 const NameContainer = styled.div`
   margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  color: #8d8d8d;
 `;
 const LableE = styled.label`
   font-size: 1.4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 5px;
   color: #8d8d8d;
 `;
 const InputFN = styled.input`
@@ -141,6 +146,11 @@ const InputFN = styled.input`
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-left: 2px solid rgb(242, 148, 184);
   /* box-shadow: 6px 7px 15px -10px rgba(0, 0, 0, 0.75); */
+  &:focus {
+    outline: 2px solid pink;
+    outline-offset: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+  }
   @media only screen and (max-width: 650px) {
     width: 100%;
   }
@@ -176,6 +186,7 @@ const EmailContainer = styled.div`
 `;
 const InputL = styled.label`
   font-size: 1.4rem;
+  margin-bottom: 5px;
 `;
 const InputEmail = styled.input`
   color: #8d8d8d;
@@ -188,6 +199,11 @@ const InputEmail = styled.input`
   box-shadow: 6px 7px 15px -10px rgba(0, 0, 0, 0.75); */
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-left: 2px solid rgb(242, 148, 184);
+  &:focus {
+    outline: 2px solid pink;
+    outline-offset: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+  }
 `;
 const MessageContainer = styled.div`
   display: flex;
@@ -197,6 +213,7 @@ const MessageContainer = styled.div`
 `;
 const LableM = styled.label`
   font-size: 1.4rem;
+  margin-bottom: 5px;
 `;
 const TextArea = styled.textarea`
   background-color: #fff;
@@ -209,6 +226,11 @@ const TextArea = styled.textarea`
   box-shadow: 6px 7px 15px -10px rgba(0, 0, 0, 0.75); */
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-left: 2px solid rgb(242, 148, 184);
+  &:focus {
+    outline: 2px solid pink;
+    outline-offset: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+  }
 `;
 const ButtonContai = styled.div``;
 const Right = styled.div`
@@ -351,16 +373,10 @@ const Contact = () => {
             and We'll responed within 24 hours.
           </Paragraph2>
           <Form>
-            <FirstLastConst>
-              <NameContainer>
-                <LableE>First Name</LableE>
-                <InputFN type="text" />
-              </NameContainer>
-              <LastName>
-                <LableL>Last Name</LableL>
-                <InputLN type="text" />
-              </LastName>
-            </FirstLastConst>
+            <NameContainer>
+              <LableE>Full Name</LableE>
+              <InputFN type="text" />
+            </NameContainer>
             <EmailContainer>
               <InputL>Email Address</InputL>
               <InputEmail type="text" />
