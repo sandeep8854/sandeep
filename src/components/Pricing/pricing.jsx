@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import Project from "../../../public/project_find.png";
-import AccImage from "../../../public/accforSideImage.png";
+import AccImage from "../../../public/according.jpg";
 import { useState } from "react";
 import SimpleValue from "../Button/SimpleValue";
 import MediumValue from "../Button/MediumValue";

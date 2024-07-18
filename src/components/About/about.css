@@ -1,5 +1,5 @@
 .section-about {
-  padding: 7rem 0 7rem 0;
+  padding: 7rem 0 0 0;
   background: #ffffff;
   position: relative;
 }
@@ -86,9 +86,17 @@
 }
 .image-container img {
   width: 100%;
-  max-width: 40rem;
+  max-width: 80%;
   height: auto;
+  /* z-index: 1000; */
 }
+@media only screen and (max-width: 500px) {
+  .image-container img {
+    max-width: 100%;
+    z-index: 10;
+  }
+}
+
 .about-title {
 }
 .page-container {
@@ -104,12 +112,12 @@
 }
 @media only screen and (max-width: 769px) {
   .section-about {
-    /* margin-top: 7rem 0 7rem 0 !important; */
+    margin-bottom: 2rem;
   }
 }
 @media only screen and (max-width: 768px) {
   .about-content {
-    width: 90%;
+    width: 100%;
   }
 }
 

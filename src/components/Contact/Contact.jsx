@@ -2,8 +2,9 @@ import styled, { keyframes } from "styled-components";
 import { CiMail } from "react-icons/ci";
 import { PiPhone } from "react-icons/pi";
 import { LuContact } from "react-icons/lu";
-
+import { SlLocationPin } from "react-icons/sl";
 import ConstactImg from "../../../public/contact.png";
+import randomImage from "../../../public/contactIMAGE.jpg";
 import Button from "../Button/Button";
 import ButtonSubmit from "../Button/ButtonSubmit";
 import Leaf from "../Leaf/Leaf.jsx";
@@ -60,8 +61,9 @@ const Heading1 = styled.h1`
 const LeftRightwrapper = styled.div`
   display: flex;
   gap: 4rem;
+  flex-direction: row-reverse;
   @media only screen and (max-width: 881px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 `;
 const Left = styled.div`
@@ -84,11 +86,11 @@ const AnimateDiv = styled.div`
 const ParaGraph = styled.p`
   display: inline;
   font-size: 1.2rem;
-  color: #fff;
+  color: #8d8d8d;
   font-weight: 600;
-  background-color: rgb(242, 148, 184);
   padding: 3px 11px;
   border-radius: 0px;
+  border: 2px solid #44a6d3;
   text-transform: uppercase;
   @media only screen and (max-width: 650px) {
     font-size: 1.4rem;
@@ -104,7 +106,7 @@ const Paragraph2 = styled.p`
   font-size: 1.4rem;
   color: #8d8d8d;
   font-weight: 400;
-  width: 80%;
+  width: 100%;
   padding-bottom: 1rem;
   word-spacing: 5px;
   @media only screen and (max-width: 650px) {
@@ -264,6 +266,7 @@ const MailPPhoneContainer = styled.div`
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   border-right: 1px solid rgba(0, 0, 0, 0.125) !important;
   /* border-left: 2px solid rgb(242, 148, 184); */
+  padding-bottom: 3.6rem;
 `;
 const EmailContai = styled.div`
   display: flex;
@@ -283,10 +286,10 @@ const CiMailContai = styled.div`
 const CiMailForDesign = styled.div`
   display: flex;
   align-items: center;
-  background-color: #fceaf1;
+  background-color: #44a6d3;
   padding: 8px 8px;
   border-radius: 50%;
-  color: #f294b8;
+  color: #fff;
 `;
 const EmailActual = styled.div`
   display: flex;
@@ -325,10 +328,10 @@ const PiPhoneContai = styled.div`
 const PiPhoneDesing = styled.div`
   display: flex;
   align-items: center;
-  background-color: #fceaf1;
+  background-color: #44a6d3;
   padding: 8px 8px;
   border-radius: 50%;
-  color: #f294b8;
+  color: #fff;
 `;
 const PhoneActual = styled.div`
   display: flex;
@@ -394,7 +397,7 @@ const Contact = () => {
         </Left>
         <Right>
           <ImageCntainer>
-            <Image src={ConstactImg} alt="Image not found conntact" />
+            <Image src={randomImage} alt="Image not found conntact" />
           </ImageCntainer>
           <MailPPhoneContainer>
             {/* Email */}
@@ -419,6 +422,18 @@ const Contact = () => {
               <PhoneActual>
                 <SpanP>Phone</SpanP>
                 <SpanN>+91 8112912494</SpanN>
+              </PhoneActual>
+            </PhoneContai>
+            {/* Address */}
+            <PhoneContai>
+              <PiPhoneContai>
+                <PiPhoneDesing>
+                  <SlLocationPin />
+                </PiPhoneDesing>
+              </PiPhoneContai>
+              <PhoneActual>
+                <SpanP>Address</SpanP>
+                <SpanN>Bangalore Karnataka, India</SpanN>
               </PhoneActual>
             </PhoneContai>
           </MailPPhoneContainer>

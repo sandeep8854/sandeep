@@ -79,6 +79,9 @@
 }
 .experience-container {
   flex: 1.5;
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+  }
 }
 .progress-wrapper {
   /* width: 330px; */

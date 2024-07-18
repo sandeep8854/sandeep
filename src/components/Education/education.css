@@ -54,16 +54,26 @@
 .educationAndImageContainer {
   display: flex;
   gap: 2rem;
-  margin: 1rem 2rem 0 2rem;
+  margin: 1rem 8rem 0 8rem;
+  flex-direction: row-reverse;
   @media only screen and (max-width: 500px) {
     flex-direction: column;
+    margin: 0;
   }
 }
 .image-container {
   flex: 1;
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+  }
 }
 .image-container img {
 }
 .education-container {
   flex: 1.5;
+  margin-top: 4rem;
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+    padding: 0 20px 0 20px;
+  }
 }
