@@ -2,12 +2,11 @@ const navlinkData = [
   {
     isProfile: true,
   },
-  { href: "#home", text: "Home" },
+  { href: "#", text: "Home" },
   { href: "#about", text: "About" },
   { href: "#experience", text: "Experience" },
   { href: "#project", text: "Project" },
-  { href: "#pricing", text: "Pricing" },
-  { href: "#Contact", text: "Contact" },
+  { href: "#contact", text: "Contact" },
   { hasSocialIcon: true },
   {
     hasCTA: true,
