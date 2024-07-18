@@ -38,6 +38,9 @@ const Nav = styled.nav`
   transition: all 1s ease-in-out;
   background-color: #fff;
   border-bottom: 1px solid #8d8d8d;
+  @media only screen and (max-width: 500px) {
+    height: 6rem;
+  }
 `;
 const LogoContainer = styled.div``;
 const AnchorTag = styled.a``;
@@ -179,7 +182,6 @@ const DarkLightMain = styled.div`
   gap: 2rem;
   color: #d90166;
   font-size: calc(1.5rem - 3px);
-  cursor: pointer;
   @media only screen and (max-width: 500px) {
     font-size: 1.5rem;
   }
@@ -189,10 +191,9 @@ const TwitterConnectContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: calc(1rem - 5px);
   font-size: calc(1.5rem - 3px);
   color: #d90166;
-  cursor: pointer;
   @media only screen and (max-width: 500px) {
     font-size: 1.5rem;
   }
@@ -282,12 +283,12 @@ const Navbar1 = () => {
           <LableBox>
             {/* <Input type="checkbox" /> */}
             <SliderBox>
-              <Circle>DarkMode Coming Soom</Circle>
+              <Circle>DarkMode</Circle>
             </SliderBox>
           </LableBox>
         </DarkAndLightContainer>
         <BlagContainer>
-          <ParagramText>Blog Coming Soon</ParagramText>
+          <ParagramText>Blog</ParagramText>
         </BlagContainer>
         <TwitterConnectContainer>
           <TfiTwitter />
