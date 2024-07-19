@@ -184,6 +184,7 @@ const DarkLightMain = styled.div`
   font-size: calc(1.5rem - 3px);
   @media only screen and (max-width: 500px) {
     font-size: 1.5rem;
+    font-weight: 500;
   }
 `;
 const DarkLightContainer = styled.div``;

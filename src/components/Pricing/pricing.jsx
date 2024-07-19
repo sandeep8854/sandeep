@@ -7,6 +7,7 @@ import MediumValue from "../Button/MediumValue";
 import BestValue from "../Button/BestValue";
 import { MdOutlineCurrencyRupee } from "react-icons/md";
 import Leaf from "../Leaf/Leaf.jsx";
+import { RiExpandLeftRightLine } from "react-icons/ri";
 
 const float = keyframes`
 from{
@@ -51,6 +52,27 @@ const ImageContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin: 0 5rem 0 5rem;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../../public/hero-pattern-mweb.svg);
+    top: -23.4rem;
+    left: -88px;
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../../../public/hero-pattern-mweb.svg);
+    top: -12.4rem;
+    right: 0px;
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+  }
   @media only screen and (max-width: 540px) {
     flex-direction: column;
     margin: 0 2rem 0 2rem;
@@ -112,7 +134,7 @@ const Wrapper = styled.div`
   }
 `;
 const Accordian = styled.div`
-  flex: 1.2;
+  flex: 1;
   align-items: center;
   margin: 0 0 0 2rem;
   transition: all 650ms ease-in-out;
@@ -126,6 +148,8 @@ const Item = styled.div`
   transition: all 650ms ease-in-out;
   /* margin-bottom: 1.5rem;
   padding: 1rem 0rem; */
+  padding: 2rem 0 2rem 0;
+  border-bottom: 1px solid gray;
 `;
 const Title = styled.div`
   color: #5f5f5f;
@@ -133,14 +157,22 @@ const Title = styled.div`
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-left: 2px solid rgb(242, 148, 184);
-  padding: 10px 15px;
-  border-radius: 4px;
+  /* border: 1px solid rgba(0, 0, 0, 0.125); */
+  /* border-left: 2px solid rgb(242, 148, 184); */
+  padding: 10px 0px;
+  /* border-radius: 4px; */
   font-size: 2rem;
   /* transition: all 0.5s cubic-bezier(0, 1, 0, 1); */
   transition: all 650ms ease-in-out;
 `;
+
+const ParaContainerwithIcon = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+`;
+// const Spann = styled.span``;
 const Para = styled.p`
   font-size: 1.6rem;
   transition: all 650ms ease-in-out;
@@ -162,10 +194,10 @@ const Spann = styled.span`
 `;
 const ContectAndPrice = styled.div`
   /* margin-top: 2rem; */
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-left: 2px solid rgb(242, 148, 184);
-  padding: 10px 15px;
-  border-radius: 4px;
+  /* border: 1px solid rgba(0, 0, 0, 0.125); */
+  /* border-left: 2px solid rgb(242, 148, 184); */
+  padding: 10px 0px;
+  /* border-radius: 4px; */
 
   transition: all 650ms ease-in-out;
   @media only screen and (max-width: 540px) {
@@ -199,7 +231,7 @@ const NewPara = styled.p`
   }
 `;
 const ImageConatinerAcc = styled.div`
-  flex: 1;
+  flex: 1.2;
   @media only screen and (max-width: 500px) {
     display: flex;
     align-items: center;
@@ -208,15 +240,15 @@ const ImageConatinerAcc = styled.div`
 `;
 const ImageAcc = styled.img`
   width: 100%;
-  max-width: 50%;
-  height: auto;
+  height: 75%;
+  max-width: auto;
 `;
 
 const Pricing = () => {
   const pricingData = [
     {
       id: 1,
-      title: "Basic",
+      title: "Basic Website for Beginners",
       rupees: "Just for ₹6000/-",
       content: [
         "✅ Website with basic design.",
@@ -232,7 +264,7 @@ const Pricing = () => {
     },
     {
       id: 2,
-      title: "Moderate",
+      title: "Moderate Website for Medium",
       rupees: "Just for ₹12000/-",
       content: [
         "✅ Website with creative design.",
@@ -248,7 +280,7 @@ const Pricing = () => {
     },
     {
       id: 3,
-      title: "Advanced",
+      title: "Advanced Website for Experts",
       rupees: "Just for ₹17000/-",
       content: [
         "✅ Website with Advanced design.",
@@ -306,7 +338,11 @@ const Pricing = () => {
               <>
                 <Item>
                   <Title onClick={() => clickFunction(index)}>
-                    <Para>{ele.title}</Para>
+                    <ParaContainerwithIcon>
+                      {" "}
+                      <RiExpandLeftRightLine />
+                      <Para>{ele.title}</Para>
+                    </ParaContainerwithIcon>
                     <Spann>{isActive === index ? "-" : "+"}</Spann>
                   </Title>
                   {isActive === index ? (
