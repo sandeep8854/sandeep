@@ -284,7 +284,7 @@ const Navbar1 = () => {
           <LableBox>
             {/* <Input type="checkbox" /> */}
             <SliderBox>
-              <Circle>DarkMode</Circle>
+              <Circle></Circle>
             </SliderBox>
           </LableBox>
         </DarkAndLightContainer>

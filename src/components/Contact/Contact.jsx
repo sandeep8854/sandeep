@@ -8,6 +8,10 @@ import randomImage from "../../../public/contactIMAGE.jpg";
 import Button from "../Button/Button";
 import ButtonSubmit from "../Button/ButtonSubmit";
 import Leaf from "../Leaf/Leaf.jsx";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const float = keyframes`
 from{
@@ -113,7 +117,41 @@ const Paragraph2 = styled.p`
     font-size: 1.6rem;
   }
 `;
-const Form = styled.form``;
+const Form = styled.form`
+  input[type="submit"] {
+    margin-top: 4rem;
+    background-color: rgb(242, 148, 184);
+    /* border: 1px solid #44a6d3; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #fff;
+    font-weight: 400;
+    /* line-height: 1.1; */
+    width: max-content;
+    padding: 1rem 3rem;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    outline: none;
+    border: 1px solid #f1719a;
+    &:hover {
+      background-color: #fff;
+      color: #f1719a;
+      border: 1px solid #f1719a;
+      transition: all 650ms ease-in-out;
+    }
+    @media only screen and (max-width: 500px) {
+      width: 100%;
+      padding: 1.5rem 3rem;
+      border-radius: 0px;
+    }
+  }
+`;
 const FirstLastConst = styled.div`
   display: flex;
   gap: 40px;
@@ -356,6 +394,31 @@ const SpanN = styled.span`
 `;
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_gjaaa6j",
+        "template_l95jxbq",
+        form.current,
+        "PJGEqfq4ipH0iSny2"
+      )
+      .then(
+        (result) => {
+          toast(`Your message has been sent successfully`);
+          console.log(result.text);
+          console.log("message sent");
+          form.current.reset();
+        },
+        (error) => {
+          toast("Failed Meassage not sent 😔 Try after some times");
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <Section>
       <Headingcont>
@@ -375,14 +438,14 @@ const Contact = () => {
             Have questions or feedback? We are here to help. Send us a message
             and We'll responed within 24 hours.
           </Paragraph2>
-          <Form>
+          <Form ref={form} onSubmit={sendEmail}>
             <NameContainer>
-              <LableE>Full Name</LableE>
-              <InputFN type="text" />
+              <LableE>Name</LableE>
+              <InputFN type="text" name="user_name" />
             </NameContainer>
             <EmailContainer>
-              <InputL>Email Address</InputL>
-              <InputEmail type="text" />
+              <InputL>Email</InputL>
+              <InputEmail type="email" name="user_email" />
             </EmailContainer>
             <MessageContainer>
               <LableM>Message</LableM>
@@ -390,10 +453,12 @@ const Contact = () => {
                 cols="9"
                 rows="8"
                 placeholder="Leave us message."
+                name="message"
               ></TextArea>
             </MessageContainer>
-            <ButtonSubmit />
+            <input type="submit" value="Send" />
           </Form>
+          <ToastContainer />
         </Left>
         <Right>
           <ImageCntainer>

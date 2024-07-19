@@ -1,7 +1,7 @@
 import { TfiInfoAlt } from "react-icons/tfi";
 import "./about.css";
 import Leaf from "../Leaf/Leaf.jsx";
-import AboutImage from "../../../public/about.png";
+import AboutImage from "../../../public/about_1.png";
 
 const About = () => {
   return (
