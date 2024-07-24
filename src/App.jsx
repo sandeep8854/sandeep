@@ -9,6 +9,7 @@ import Pricing from "./components/Pricing/pricing";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/FooterSec";
 import Scroll from "./components/Scroll/Scroll";
+import Sliders from "./components/Sliders/ImageSlider";
 // import { Route, Routes } from "react-router-dom";
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
       <Project />
       <Education />
       <Pricing />
+      <Sliders />
       <Contact />
       <Footer />
       <Scroll />

@@ -149,7 +149,7 @@ const Item = styled.div`
   /* margin-bottom: 1.5rem;
   padding: 1rem 0rem; */
   padding: 2rem 0 2rem 0;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 `;
 const Title = styled.div`
   color: #5f5f5f;
@@ -232,6 +232,7 @@ const NewPara = styled.p`
 `;
 const ImageConatinerAcc = styled.div`
   flex: 1.2;
+  margin: 1rem 1rem;
   @media only screen and (max-width: 500px) {
     display: flex;
     align-items: center;
@@ -242,6 +243,7 @@ const ImageAcc = styled.img`
   width: 100%;
   height: 75%;
   max-width: auto;
+  animation: ${float} 3s ease-in-out infinite;
 `;
 
 const Pricing = () => {
@@ -365,7 +367,7 @@ const Pricing = () => {
           })}
         </Accordian>
         <ImageConatinerAcc>
-          <ImageAcc src={AccImage} alt="image not found" />
+          <ImageAcc src={AccImage} alt="image not found" loading="lazy" />
         </ImageConatinerAcc>
       </Wrapper>
     </Container>

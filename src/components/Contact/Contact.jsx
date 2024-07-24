@@ -62,6 +62,13 @@ const SpanContact = styled.span`
 const Heading1 = styled.h1`
   text-align: center !important;
 `;
+const NewDivCont = styled.div`
+  margin-bottom: 1.5rem;
+  max-width: 50%;
+  @media only screen and (max-width: 500px) {
+    max-width: 100%;
+  }
+`;
 const LeftRightwrapper = styled.div`
   display: flex;
   gap: 4rem;
@@ -428,6 +435,13 @@ const Contact = () => {
         <Heading1>Contact Us ~</Heading1>
       </Headingcont>
       <Leaf />
+      <NewDivCont>
+        <HeadingT>I am open to work and network</HeadingT>
+        <Paragraph2>
+          If you have an exciting project in mind, want to collaborate, or
+          simply wish me connect, let's initiate a conversation.
+        </Paragraph2>
+      </NewDivCont>
       <LeftRightwrapper>
         <Left>
           <AnimateDiv>

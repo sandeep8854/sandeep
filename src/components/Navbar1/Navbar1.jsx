@@ -39,7 +39,7 @@ const Nav = styled.nav`
   background-color: #fff;
   border-bottom: 1px solid #8d8d8d;
   @media only screen and (max-width: 500px) {
-    height: 6rem;
+    height: 7rem;
   }
 `;
 const LogoContainer = styled.div``;
