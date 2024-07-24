@@ -11,6 +11,16 @@ import { RiLightbulbFlashLine } from "react-icons/ri";
 import { AiOutlineHeatMap } from "react-icons/ai";
 import { AiOutlineHdd } from "react-icons/ai";
 import { FaHourglassHalf } from "react-icons/fa";
+import { LiaLongArrowAltDownSolid } from "react-icons/lia";
+import { PiDotsThreeVertical } from "react-icons/pi";
+
+const ArrowConntainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem 2rem;
+`;
 
 const MainContainer = styled.div`
   position: relative;
@@ -21,6 +31,8 @@ const MainContainer = styled.div`
   border-radius: 4px;
   @media only screen and (max-width: 540px) {
     margin-top: 2rem;
+    margin-left: calc(2rem + 5px);
+    margin-right: calc(2.4rem - 9px);
   }
 `;
 const Heading2 = styled.h2`
@@ -36,7 +48,7 @@ const ImageAndParaContainer = styled.div`
   margin: 0 1rem 0 2rem;
   gap: 2rem;
   @media only screen and (max-width: 540px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: 0 2rem 0 2rem;
   }
 `;
@@ -88,6 +100,7 @@ const RightArrowContainer = styled.div`
 const DotContainer = styled.div`
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
 `;
 const DotTask = styled.div`
   margin: 0 3px;
@@ -159,6 +172,10 @@ const ImageSlider = () => {
   }
   return (
     <>
+      <ArrowConntainer>
+        <LiaLongArrowAltDownSolid size={"4rem"} color={"#868686"} />
+        <PiDotsThreeVertical size={"4rem"} color={"#868686"} />
+      </ArrowConntainer>
       <MainContainer>
         <Heading2>{SliderData[currentIndex].heading}</Heading2>
         <ImageAndParaContainer>
@@ -183,7 +200,7 @@ const ImageSlider = () => {
       <DotContainer>
         {SliderData.map((items, indexS) => (
           <DotTask key={indexS} onClick={() => goToSlide(indexS)}>
-            <GoDotFill />{" "}
+            <GoDotFill color={"#868686"} />{" "}
           </DotTask>
         ))}
       </DotContainer>
