@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import ImageS from "../../../public/Slider2.jpg";
 import ImageT from "../../../public/slider1.png";
@@ -154,8 +154,37 @@ const SliderData = [
       "Lorem ipsum dolor sit amet, consectetur adipisicinmelit. Exdelectus qui asperiores inventore suscipit libero optio, laborepossimus at quis! Lorem ipsum dolor sit amet consectetur adipisicingelit. Id, maiores2. maiores1.Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, modi",
   },
 ];
+const counterData = [
+  { id: 111, numberCounter: "100", duration: 2 },
+  { id: 222, numberCounter: "200", duration: 2 },
+  { id: 333, numberCounter: "300", duration: 2 },
+  { id: 444, numberCounter: "80", duration: 3 },
+];
 
 const ImageSlider = () => {
+  const [countC, setCountC] = useState(0);
+  let num;
+  let dur;
+  counterData.map((ele, index) => {
+    num = ele.numberCounter;
+    dur = ele.duration;
+  });
+
+  useEffect(() => {
+    let start = 0;
+    //first three number from the data.
+    const end = parseInt(num.substring(0, 3));
+    if (start === end) return;
+    let totalMilSecDur = dur;
+    let incrementTimer = (totalMilSecDur / end) * 1000;
+
+    let timer = setInterval(() => {
+      start = start + 1;
+      setCountC(start);
+      if (start === end) clearInterval(timer);
+    }, incrementTimer);
+  }, [num, dur]);
+
   const [currentIndex, setCurrentIndex] = useState(0);
   function FunGoToPrevious() {
     const isFirstSlide = currentIndex === 0;
@@ -208,28 +237,28 @@ const ImageSlider = () => {
         <Stats>
           <AiOutlineFundProjectionScreen size={"4rem"} />
           <Heading22>
-            <SpanTag></SpanTag>%
+            <SpanTag>{countC}</SpanTag>%
           </Heading22>
           <ParagraphT>Project</ParagraphT>
         </Stats>
         <Stats>
           <RiLightbulbFlashLine size={"4rem"} />
           <Heading22>
-            <SpanTag></SpanTag>%
+            <SpanTag>{countC}</SpanTag>%
           </Heading22>
           <ParagraphT>Ideas</ParagraphT>
         </Stats>
         <Stats>
-          <AiOutlineFundProjectionScreen size={"4rem"} />
+          <AiOutlineHdd size={"4rem"} />
           <Heading22>
-            <SpanTag></SpanTag>%
+            <SpanTag>{countC}</SpanTag>%
           </Heading22>
           <ParagraphT>Credits</ParagraphT>
         </Stats>
         <Stats>
           <FaHourglassHalf size={"4rem"} />
           <Heading22>
-            <SpanTag></SpanTag>%
+            <SpanTag>{countC}</SpanTag>%
           </Heading22>
           <ParagraphT>Hours</ParagraphT>
         </Stats>
