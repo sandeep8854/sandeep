@@ -6,11 +6,6 @@ import ImageU from "../../../public/Sliders_1.png";
 import { LiaLongArrowAltLeftSolid } from "react-icons/lia";
 import { LiaLongArrowAltRightSolid } from "react-icons/lia";
 import { GoDotFill } from "react-icons/go";
-import { AiOutlineFundProjectionScreen } from "react-icons/ai";
-import { RiLightbulbFlashLine } from "react-icons/ri";
-import { AiOutlineHeatMap } from "react-icons/ai";
-import { AiOutlineHdd } from "react-icons/ai";
-import { FaHourglassHalf } from "react-icons/fa";
 import { LiaLongArrowAltDownSolid } from "react-icons/lia";
 import { PiDotsThreeVertical } from "react-icons/pi";
 
@@ -107,35 +102,7 @@ const DotTask = styled.div`
   font-size: 2rem;
   cursor: pointer;
 `;
-const AchiveMentContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #737373;
-  text-align: center;
-  padding: 5rem;
-  @media only screen and (max-width: 600px) {
-    flex-direction: column;
-  }
-`;
-const Stats = styled.div`
-  color: #fff;
-  min-height: 20px;
-  @media only screen and (max-width: 600px) {
-    &:not(:last-child) {
-      padding-bottom: 4rem;
-    }
-  }
-`;
-const Heading22 = styled.h2`
-  font-size: large;
-`;
-const SpanTag = styled.span`
-  font-size: large;
-`;
-const ParagraphT = styled.p`
-  font-size: large;
-`;
+
 const imageArray = [ImageS, ImageT, ImageU];
 const SliderData = [
   {
@@ -154,37 +121,8 @@ const SliderData = [
       "Lorem ipsum dolor sit amet, consectetur adipisicinmelit. Exdelectus qui asperiores inventore suscipit libero optio, laborepossimus at quis! Lorem ipsum dolor sit amet consectetur adipisicingelit. Id, maiores2. maiores1.Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, modi",
   },
 ];
-const counterData = [
-  { id: 111, numberCounter: "100", duration: 2 },
-  { id: 222, numberCounter: "200", duration: 2 },
-  { id: 333, numberCounter: "300", duration: 2 },
-  { id: 444, numberCounter: "80", duration: 3 },
-];
 
 const ImageSlider = () => {
-  const [countC, setCountC] = useState(0);
-  let num;
-  let dur;
-  counterData.map((ele, index) => {
-    num = ele.numberCounter;
-    dur = ele.duration;
-  });
-
-  useEffect(() => {
-    let start = 0;
-    //first three number from the data.
-    const end = parseInt(num.substring(0, 3));
-    if (start === end) return;
-    let totalMilSecDur = dur;
-    let incrementTimer = (totalMilSecDur / end) * 1000;
-
-    let timer = setInterval(() => {
-      start = start + 1;
-      setCountC(start);
-      if (start === end) clearInterval(timer);
-    }, incrementTimer);
-  }, [num, dur]);
-
   const [currentIndex, setCurrentIndex] = useState(0);
   function FunGoToPrevious() {
     const isFirstSlide = currentIndex === 0;
@@ -233,36 +171,6 @@ const ImageSlider = () => {
           </DotTask>
         ))}
       </DotContainer>
-      <AchiveMentContainer>
-        <Stats>
-          <AiOutlineFundProjectionScreen size={"4rem"} />
-          <Heading22>
-            <SpanTag>{countC}</SpanTag>%
-          </Heading22>
-          <ParagraphT>Project</ParagraphT>
-        </Stats>
-        <Stats>
-          <RiLightbulbFlashLine size={"4rem"} />
-          <Heading22>
-            <SpanTag>{countC}</SpanTag>%
-          </Heading22>
-          <ParagraphT>Ideas</ParagraphT>
-        </Stats>
-        <Stats>
-          <AiOutlineHdd size={"4rem"} />
-          <Heading22>
-            <SpanTag>{countC}</SpanTag>%
-          </Heading22>
-          <ParagraphT>Credits</ParagraphT>
-        </Stats>
-        <Stats>
-          <FaHourglassHalf size={"4rem"} />
-          <Heading22>
-            <SpanTag>{countC}</SpanTag>%
-          </Heading22>
-          <ParagraphT>Hours</ParagraphT>
-        </Stats>
-      </AchiveMentContainer>
     </>
   );
 };
