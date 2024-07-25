@@ -9,6 +9,9 @@ const AchiveMentContainer = styled.div`
   padding: 5rem;
   @media only screen and (max-width: 600px) {
     flex-direction: column;
+    &:not(:last-child) {
+      padding-bottom: 0;
+    }
   }
 `;
 const Stats = styled.div`

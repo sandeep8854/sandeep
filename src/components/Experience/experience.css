@@ -140,9 +140,11 @@
 }
 a,
 .org-name {
+  font-weight: 500;
   text-decoration: none;
   color: #8d8d8d;
 }
 .year {
   color: #8d8d8d;
+  font-weight: 500;
 }

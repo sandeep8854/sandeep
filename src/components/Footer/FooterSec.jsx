@@ -22,9 +22,17 @@ const CoverCopySocial = styled.div`
   border-top: 1px solid #999;
   border-bottom: 1px solid #999;
 `;
-const ParaGraphFooter = styled.p``;
+const ParaGraphFooter = styled.p`
+  @media only screen and (max-width: 500px) {
+    font-size: 1.5rem;
+  }
+`;
 const FollowContainer = styled.div``;
-const FollowText = styled.p``;
+const FollowText = styled.p`
+  @media only screen and (max-width: 500px) {
+    font-size: 1.5rem;
+  }
+`;
 const Icon = styled.div`
   display: flex;
   align-items: center;
@@ -38,8 +46,16 @@ const TermContainer = styled.div`
   gap: 5rem;
   padding-top: 1rem;
 `;
-const Para1 = styled.p``;
-const Para2 = styled.p``;
+const Para1 = styled.p`
+  @media only screen and (max-width: 500px) {
+    font-size: 1.5rem;
+  }
+`;
+const Para2 = styled.p`
+  @media only screen and (max-width: 500px) {
+    font-size: 1.5rem;
+  }
+`;
 
 const FooterSec = () => {
   const currentTime = new Date();

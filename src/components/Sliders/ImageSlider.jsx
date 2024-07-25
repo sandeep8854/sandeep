@@ -61,7 +61,7 @@ const ParagraphP = styled.p`
   @media only screen and (max-width: 540px) {
     font-size: calc(1.8rem - 1px);
     padding-top: 1rem;
-    font-weight: 400;
+    font-weight: 500;
   }
 `;
 const ImageFor = styled.img`

@@ -122,6 +122,7 @@ const Paragraph2 = styled.p`
   word-spacing: 5px;
   @media only screen and (max-width: 650px) {
     font-size: 1.6rem;
+    font-weight: 500;
   }
 `;
 const Form = styled.form`
@@ -179,9 +180,10 @@ const NameContainer = styled.div`
   color: #8d8d8d;
 `;
 const LableE = styled.label`
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin-bottom: 5px;
   color: #8d8d8d;
+  font-weight: 500;
 `;
 const InputFN = styled.input`
   color: #8d8d8d;
@@ -206,8 +208,9 @@ const LastName = styled.div`
   margin: 1.5rem 0;
 `;
 const LableL = styled.label`
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
+  font-weight: 500;
 `;
 const InputLN = styled.input`
   color: #8d8d8d;
@@ -232,8 +235,9 @@ const EmailContainer = styled.div`
   color: #8d8d8d;
 `;
 const InputL = styled.label`
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin-bottom: 5px;
+  font-weight: 500;
 `;
 const InputEmail = styled.input`
   color: #8d8d8d;
@@ -259,8 +263,9 @@ const MessageContainer = styled.div`
   color: #8d8d8d;
 `;
 const LableM = styled.label`
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin-bottom: 5px;
+  font-weight: 500;
 `;
 const TextArea = styled.textarea`
   background-color: #fff;

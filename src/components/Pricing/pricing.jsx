@@ -101,7 +101,7 @@ const Paragraph = styled.p`
   line-height: 1.8;
   word-spacing: 5px;
   @media only screen and (max-width: 540px) {
-    font-size: 13px;
+    font-size: 15px;
     width: 100%;
     padding: 0;
   }
