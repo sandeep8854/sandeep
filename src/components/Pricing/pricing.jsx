@@ -171,6 +171,7 @@ const ParaContainerwithIcon = styled.div`
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  font-weight: 500;
 `;
 // const Spann = styled.span``;
 const Para = styled.p`

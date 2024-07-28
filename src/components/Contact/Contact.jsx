@@ -316,7 +316,7 @@ const MailPPhoneContainer = styled.div`
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   border-right: 1px solid rgba(0, 0, 0, 0.125) !important;
   /* border-left: 2px solid rgb(242, 148, 184); */
-  padding-bottom: 3.6rem;
+  padding-bottom: 4.5rem;
 `;
 const EmailContai = styled.div`
   display: flex;
