@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 const AchiveMentContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #737373;
+  background-color: #444;
   text-align: center;
   padding: 5rem;
   @media only screen and (max-width: 600px) {
@@ -14,13 +14,31 @@ const AchiveMentContainer = styled.div`
     }
   }
 `;
+const forPopUp = keyframes`
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+   opacity: 1;
+   scale: 1;
+  }
+`;
 const Stats = styled.div`
   color: #fff;
-  min-height: 20px;
+  width: 22rem;
+  padding: 2rem 0 2rem 0;
+  border: 1px solid #575757;
+  border-radius: 2px;
+  background-color: #575757;
+  animation: ${forPopUp} 5s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
   @media only screen and (max-width: 600px) {
     &:not(:last-child) {
       padding-bottom: 4rem;
     }
+    width: 30rem;
   }
 `;
 const Heading22 = styled.h2`

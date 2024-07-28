@@ -24,7 +24,7 @@ const Wrapper = styled.div`
   width: 100%;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #737373;
+  background-color: #444;
   @media only screen and (max-width: 600px) {
     flex-direction: column;
   }
