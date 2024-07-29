@@ -47,6 +47,16 @@ const SpanIcon = styled.span`
 `;
 const Heading1 = styled.h1``;
 
+const forPopUpImage = keyframes`
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+   opacity: 1;
+   scale: 1;
+  }
+`;
 const ImageContainer = styled.div`
   display: flex;
   align-items: center;
@@ -78,8 +88,12 @@ const ImageContainer = styled.div`
     margin: 0 2rem 0 2rem;
   }
 `;
+
 const ImageSection = styled.div`
   flex: 1;
+  animation: ${forPopUpImage} 5s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 `;
 
 const Image = styled.img`
@@ -234,6 +248,9 @@ const NewPara = styled.p`
 const ImageConatinerAcc = styled.div`
   flex: 1.2;
   margin: 1rem 1rem;
+  animation: ${forPopUpImage} 5s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
   @media only screen and (max-width: 500px) {
     display: flex;
     align-items: center;

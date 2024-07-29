@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import ImageS from "../../../public/Slider2.jpg";
 import ImageT from "../../../public/slider1.png";
 import ImageU from "../../../public/Sliders_1.png";
@@ -50,8 +50,21 @@ const ImageAndParaContainer = styled.div`
 const ParaFor100 = styled.div`
   flex: 1.3;
 `;
+const forPopUp = keyframes`
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+   opacity: 1;
+   scale: 1;
+  }
+`;
 const ImgCon = styled.div`
   flex: 1;
+  animation: ${forPopUp} 5s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 `;
 const ParagraphP = styled.p`
   font-size: 1.5rem;

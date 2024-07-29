@@ -3,6 +3,7 @@ import { CiMail } from "react-icons/ci";
 import { PiPhone } from "react-icons/pi";
 import { LuContact } from "react-icons/lu";
 import { SlLocationPin } from "react-icons/sl";
+import { MdStarRate } from "react-icons/md";
 import ConstactImg from "../../../public/contact.png";
 import randomImage from "../../../public/contactIMAGE.jpg";
 import Button from "../Button/Button";
@@ -185,6 +186,10 @@ const LableE = styled.label`
   color: #8d8d8d;
   font-weight: 500;
 `;
+const Sup = styled.sup`
+  color: red;
+  margin-left: -5px;
+`;
 const InputFN = styled.input`
   color: #8d8d8d;
   background-color: #fff;
@@ -291,6 +296,16 @@ const Right = styled.div`
   border-radius: 4px;
   border-left: 2px solid rgb(242, 148, 184) !important;
 `;
+const forPopUp = keyframes`
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+   opacity: 1;
+   scale: 1;
+  }
+`;
 const ImageCntainer = styled.div`
   max-height: 70vh;
   /* border: 1px solid rgba(0, 0, 0, 0.125);
@@ -299,7 +314,11 @@ const ImageCntainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: ${forPopUp} 5s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 `;
+
 const Image = styled.img`
   width: 100%;
   max-width: 40rem;
@@ -316,7 +335,7 @@ const MailPPhoneContainer = styled.div`
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   border-right: 1px solid rgba(0, 0, 0, 0.125) !important;
   /* border-left: 2px solid rgb(242, 148, 184); */
-  padding-bottom: 4.5rem;
+  padding-bottom: 5.5rem;
 `;
 const EmailContai = styled.div`
   display: flex;
@@ -459,15 +478,30 @@ const Contact = () => {
           </Paragraph2>
           <Form ref={form} onSubmit={sendEmail}>
             <NameContainer>
-              <LableE>Name</LableE>
+              <LableE>
+                Name{" "}
+                <Sup>
+                  <MdStarRate />
+                </Sup>
+              </LableE>
               <InputFN type="text" name="user_name" />
             </NameContainer>
             <EmailContainer>
-              <InputL>Email</InputL>
+              <InputL>
+                Email{" "}
+                <Sup>
+                  <MdStarRate />
+                </Sup>
+              </InputL>
               <InputEmail type="email" name="user_email" />
             </EmailContainer>
             <MessageContainer>
-              <LableM>Message</LableM>
+              <LableM>
+                Message{" "}
+                <Sup>
+                  <MdStarRate />
+                </Sup>
+              </LableM>
               <TextArea
                 cols="9"
                 rows="8"
