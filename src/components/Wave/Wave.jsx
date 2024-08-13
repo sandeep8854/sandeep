@@ -34,7 +34,7 @@ const SvGContainer = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  height: 200px;
+  height: 50%;
   background-size: cover;
 `;
 
