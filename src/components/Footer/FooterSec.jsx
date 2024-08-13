@@ -21,10 +21,18 @@ const AboutProfileQuickContainer = styled.div`
 const AboutPeople = styled.div`
   flex: 2;
 `;
+const ParagraphText = styled.p`
+  word-spacing: 2px;
+  font-size: 1.3rem;
+  @media only screen and (max-width: 500px) {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+`;
 const UnorderList = styled.ul`
   list-style: none;
   @media only screen and (max-width: 500px) {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 400;
   }
 `;
@@ -36,14 +44,6 @@ const AnchorTag = styled.a``;
 const Heading3 = styled.h3`
   padding-bottom: 1rem;
   font-size: medium;
-`;
-const ParagraphText = styled.p`
-  word-spacing: 2px;
-  font-size: 1.3rem;
-  @media only screen and (max-width: 500px) {
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
 `;
 const ProfilePortfolio = styled.div`
   flex: 1;
@@ -69,13 +69,13 @@ const CoverCopySocial = styled.div`
 `;
 const ParaGraphFooter = styled.p`
   @media only screen and (max-width: 500px) {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 `;
 const FollowContainer = styled.div``;
 const FollowText = styled.p`
   @media only screen and (max-width: 500px) {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 `;
 const Icon = styled.div`
@@ -93,12 +93,12 @@ const TermContainer = styled.div`
 `;
 const Para1 = styled.p`
   @media only screen and (max-width: 500px) {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 `;
 const Para2 = styled.p`
   @media only screen and (max-width: 500px) {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 `;
 
