@@ -27,7 +27,7 @@ const navItemAnimation = ({ index }) => css`
   animation: ${navItemFad} 0.5s ease forwards ${index / 7 + 0.5}s;
 `;
 const Nav = styled.nav`
-  height: calc(6.5rem - 10px);
+  height: calc(6.5rem - 0px);
   width: 100%;
   padding: 0 2rem;
   display: flex;
@@ -37,7 +37,8 @@ const Nav = styled.nav`
   z-index: 98;
   transition: all 1s ease-in-out;
   background-color: #fff;
-  border-bottom: 1px solid #8d8d8d;
+  border-bottom: 1px solid #f4f4f4;
+  opacity: 0.8;
   @media only screen and (max-width: 500px) {
     height: 7rem;
   }
