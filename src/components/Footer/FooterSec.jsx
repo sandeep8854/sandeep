@@ -70,6 +70,11 @@ const InputFN = styled.input`
   padding: 0.5rem 1rem;
   border: none;
   font-weight: 500;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  @media only screen and (max-width: 500px) {
+    padding: 1.2rem 1.5rem;
+  }
   /* border-radius: 4px; */
   /* border: 1px solid rgba(0, 0, 0, 0.125); */
   /* border-left: 2px solid rgb(242, 148, 184); */
@@ -87,6 +92,9 @@ const Button = styled.button`
   /* border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.125); */
   cursor: pointer;
+  @media only screen and (max-width: 500px) {
+    padding: 1.2rem 1.5rem;
+  }
 `;
 
 const TextContainer = styled.div`
