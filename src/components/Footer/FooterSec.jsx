@@ -11,7 +11,7 @@ const Footer = styled.footer`
 const AboutProfileQuickContainer = styled.div`
   display: flex;
   gap: 2rem;
-  padding: 0 8rem 2rem 8rem;
+  padding: 0 3rem 2rem 8rem;
   @media only screen and (max-width: 500px) {
     flex-direction: column;
     padding: 0 4rem;
@@ -50,6 +50,43 @@ const ProfilePortfolio = styled.div`
 `;
 const QuickLink = styled.div`
   flex: 1;
+`;
+const SubscribeContainer = styled.div`
+  @media only screen and (max-width: 500px) {
+    padding-bottom: 4rem;
+  }
+`;
+const SubscribeEmail = styled.div`
+  display: flex;
+  border: 2px solid #44a6d3;
+  border-radius: 2px;
+`;
+const InputFN = styled.input`
+  width: 70%;
+  color: #8d8d8d;
+  background-color: #fff;
+  /* border: 1px solid rgb(77, 77, 77); */
+  outline: none;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-weight: 500;
+  /* border-radius: 4px; */
+  /* border: 1px solid rgba(0, 0, 0, 0.125); */
+  /* border-left: 2px solid rgb(242, 148, 184); */
+`;
+
+const Button = styled.button`
+  width: 30%;
+  color: #ffffff;
+  border: none;
+  background-color: #44a6d3;
+  /* border: 1px solid rgb(77, 77, 77); */
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  /* border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.125); */
+  cursor: pointer;
 `;
 
 const TextContainer = styled.div`
@@ -113,13 +150,13 @@ const FooterSec = () => {
         <AboutPeople>
           <Heading3>About</Heading3>
           <ParagraphText>
-            "Thank you for visiting my portfolio website. I hope you enjoyed
+            Thank you for visiting my portfolio website. I hope you enjoyed
             exploring my work and learning more about my expertise in graphic
             design, UI/UX, development, and DSA. If you have any questions or
             would like to discuss potential collaborations, please feel free to
             reach out to me. I'm always excited to connect with fellow
             professionals and explore new opportunities. I look forward to
-            hearing from you."
+            hearing from you.
           </ParagraphText>
         </AboutPeople>
         <ProfilePortfolio>
@@ -161,6 +198,41 @@ const FooterSec = () => {
               <AnchorTag href="">Contact</AnchorTag>
             </List>
           </UnorderList>
+        </QuickLink>
+      </AboutProfileQuickContainer>
+      <AboutProfileQuickContainer>
+        <AboutPeople>
+          <Heading3>Address</Heading3>
+          <ParagraphText>
+            Indiqube Gamma, No.293/154/172 2nd floor, Outer Ring Road,
+            Kadubeesanahalli, Bengaluru, Karnataka 560103
+          </ParagraphText>
+        </AboutPeople>
+        <ProfilePortfolio>
+          <Heading3>Keep in touch with us</Heading3>
+          <UnorderList>
+            <List>
+              <AnchorTag href="">Call us on +91 8112912494</AnchorTag>
+            </List>
+            <List>
+              <AnchorTag href="">Email: sandeepstructure@gmail.com</AnchorTag>
+            </List>
+          </UnorderList>
+        </ProfilePortfolio>
+        <QuickLink>
+          <SubscribeContainer>
+            <Heading3>Subscribe to emails</Heading3>
+            <SubscribeEmail>
+              <InputFN
+                type="email"
+                name="email"
+                placeholder="Enter your email here*"
+                autoComplete="off"
+                required="true"
+              />
+              <Button>Join</Button>
+            </SubscribeEmail>
+          </SubscribeContainer>
         </QuickLink>
       </AboutProfileQuickContainer>
       <TextContainer>
