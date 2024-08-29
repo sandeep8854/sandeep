@@ -71,8 +71,7 @@ h1,
   aspect-ratio: 6/2;
   /* object-fit: none; */
 }
-img {
-}
+
 @media only screen and (max-width: 500px) {
   div .project-content {
     /* font-size: 12px; */
