@@ -73,8 +73,7 @@ h1,
 }
 
 @media only screen and (max-width: 500px) {
-  div .project-content {
-    /* font-size: 12px; */
+  .project-content {
     width: auto;
   }
 }
