@@ -3,10 +3,14 @@ import LinkButton from "../Button/LinkButton";
 import "./project.css";
 import { GoProjectSymlink } from "react-icons/go";
 import Leaf from "../Leaf/Leaf.jsx";
+import img1 from "../../../public/developer-portfolio.jpg";
+import img2 from "../../../public/pizza.jpg";
+import img3 from "../../../public/travel-list.jpg";
 
 const Project = () => {
   const projectData = [
     {
+      image: "../../../public/developer-portfolio_1.jpg",
       name: "Developer Portfolio",
       desc: "Software Developer Portfolio Template build with react.js and styled component that helps you showcase our work and skills as a software developer.",
       gitHub: "https://github.com/sandeep8854/sandeep",
@@ -14,6 +18,7 @@ const Project = () => {
       target: "_blank",
     },
     {
+      image: "../../../public/pizza_2.jpg",
       name: "Fast React Pizza Co.",
       desc: "Consumers can order their pizzas by calling the single Happiness Hotline number 18002081234 OR order online at fastreactpizza.com online. and will be recieved 24/7",
       gitHub: "https://github.com/sandeep8854/fast-react-pizza",
@@ -21,6 +26,7 @@ const Project = () => {
       target: "_blank",
     },
     {
+      image: "../../../public/travel-list_2.jpg",
       name: "Travel List",
       desc: "In this project user can add the items, delete the items and also and sort the item based on descrieption, input order and packed status.",
       gitHub: "https://github.com/sandeep8854/travel-list",
@@ -43,6 +49,13 @@ const Project = () => {
             return (
               <>
                 <div className="project-content">
+                  <img
+                    loading="lazy"
+                    src={ele.image}
+                    className="image-section"
+                    alt="image not found!"
+                  />
+
                   <h4 className="project-title">
                     <b>{ele.name}</b>
                   </h4>
