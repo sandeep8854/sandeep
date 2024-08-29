@@ -60,18 +60,19 @@ const SubscribeEmail = styled.div`
   display: flex;
   border: 2px solid #44a6d3;
   border-radius: 2px;
+  background-color: #ffffff;
 `;
 const InputFN = styled.input`
+  background-color: #fff;
   width: 70%;
   color: #8d8d8d;
-  background-color: #fff;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
   /* border: 1px solid rgb(77, 77, 77); */
   outline: none;
   padding: 0.5rem 1rem;
   border: none;
   font-weight: 500;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
   @media only screen and (max-width: 500px) {
     padding: 1.2rem 1.5rem;
   }
