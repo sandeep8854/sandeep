@@ -3,9 +3,6 @@ import LinkButton from "../Button/LinkButton";
 import "./project.css";
 import { GoProjectSymlink } from "react-icons/go";
 import Leaf from "../Leaf/Leaf.jsx";
-import img1 from "../../../public/developer-portfolio.jpg";
-import img2 from "../../../public/pizza.jpg";
-import img3 from "../../../public/travel-list.jpg";
 
 const Project = () => {
   const projectData = [
