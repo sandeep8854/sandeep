@@ -3,6 +3,11 @@ import LinkButton from "../Button/LinkButton";
 import "./project.css";
 import { GoProjectSymlink } from "react-icons/go";
 import Leaf from "../Leaf/Leaf.jsx";
+import Img1 from "../../../public/developer-portfolio_2_3.jpg";
+import Img2 from "../../../public/pizza_2_3.jpg";
+import Img3 from "../../../public/travel-list_2_3.jpg";
+
+const imageArray = [Img1, Img2, Img3];
 
 const Project = () => {
   const projectData = [
@@ -48,7 +53,7 @@ const Project = () => {
                 <div className="project-content">
                   <img
                     loading="lazy"
-                    src={ele.image}
+                    src={imageArray[index]}
                     className="image-section"
                     alt="image not found!"
                   />
