@@ -1,5 +1,7 @@
 import styled, { keyframes, css } from "styled-components";
-import LogoImg2 from "../../../public/sandeep-logo.png";
+// import LogoImg2 from "../../../public/sandeep-logo.png";
+import LogoImg2 from "../../../public/SAN-LOGO-black.png";
+
 import { useState } from "react";
 import navlinkData from "./navlinkData";
 import programmer from "../../../public/programmer.png";
@@ -7,8 +9,12 @@ import { PiLinkSimpleHorizontalBreak } from "react-icons/pi";
 import { FaGithub } from "react-icons/fa";
 import { FaHackerrank } from "react-icons/fa";
 import { TfiTwitter } from "react-icons/tfi";
+import { VscMenu } from "react-icons/vsc";
+import { MdPhoneAndroid } from "react-icons/md";
+
 import { LuSunMedium } from "react-icons/lu";
 import { RxMoon } from "react-icons/rx";
+import HumburImage from "../../../public/download.svg";
 
 // import { Link } from "react-router-dom";
 
@@ -27,7 +33,7 @@ const navItemAnimation = ({ index }) => css`
   animation: ${navItemFad} 0.5s ease forwards ${index / 7 + 0.5}s;
 `;
 const Nav = styled.nav`
-  height: calc(6.5rem - 0px);
+  height: calc(7rem + 10px);
   width: 100%;
   padding: 0 2rem;
   display: flex;
@@ -43,11 +49,29 @@ const Nav = styled.nav`
     height: 7rem;
   }
 `;
-const LogoContainer = styled.div``;
+const LogoContainer = styled.div`
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 68px;
+  width: 20%;
+  overflow: hidden;
+  @media only screen and (max-width: 500px) {
+    max-height: 272px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+`;
 const AnchorTag = styled.a``;
 const ImageLogo = styled.img`
-  width: 5.5rem;
-  border-radius: 50%;
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+  @media only screen and (max-width: 500px) {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
 `;
 const MenuIcon = styled.div`
   cursor: pointer;
@@ -210,21 +234,65 @@ const LableBox = styled.label``;
 const Input = styled.input``;
 const SliderBox = styled.div``;
 const Circle = styled.div``;
-const BlagContainer = styled.div``;
-const ParagramText = styled.p``;
+const ContainerIcon = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+`;
+const ContainerSupportAndMenu = styled.div`
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+`;
+const SpanText1 = styled.span`
+  font-size: 1.3rem;
+  font-weight: 100;
+  @media only screen and (max-width: 703px) {
+    font-size: 1.1rem;
+  }
+`;
+const PhoneAndContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+const SpanText3 = styled.span`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+const SpanText2 = styled.span`
+  font-size: 2rem;
+  font-weight: 500;
+  @media only screen and (max-width: 703px) {
+    font-size: 1.5rem;
+  }
+`;
+const ImageICON = styled.img``;
+const HumburgerIcon = styled.div`
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  border: 1px solid gray;
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.1);
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+`;
+
 const Navbar1 = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   function callingFunction() {
-    // console.log("clicked");
     setMenuOpen(!menuOpen);
   }
   return (
     <Nav>
       <LogoContainer>
-        <AnchorTag href="#Hero">
-          <ImageLogo src={LogoImg2} alt="image not found" />
-        </AnchorTag>
+        <ImageLogo src={LogoImg2} alt="image not found" />
       </LogoContainer>
       {/* <MenuIcon onClick={callingFunction}>
         <LineOne menuOpen={menuOpen} />
@@ -271,34 +339,20 @@ const Navbar1 = () => {
             </List>
           ))}
       </NavList> */}
-      {/* For temp only. */}
-      {/* <div>
-          <label class="ui-switch">
-            <input type="checkbox" id="toggleSwitch">
-            <div class="slider">
-              <div class="circle"></div>
-            </div>
-          </label>          
-        </div> */}
-      <DarkLightMain>
-        <DarkAndLightContainer>
-          <LableBox>
-            {/* <Input type="checkbox" /> */}
-            <SliderBox>
-              <Circle></Circle>
-            </SliderBox>
-          </LableBox>
-        </DarkAndLightContainer>
-        <BlagContainer>
-          <ParagramText>Blog</ParagramText>
-        </BlagContainer>
-        <TwitterConnectContainer>
-          <TfiTwitter />
-          <TwitterTextLink href="https://x.com/sandeepdevps" target="_blank">
-            Connect
-          </TwitterTextLink>
-        </TwitterConnectContainer>
-      </DarkLightMain>
+      <ContainerIcon>
+        <ContainerSupportAndMenu>
+          <SpanText1>Call for Collaboration</SpanText1>
+          <PhoneAndContainer>
+            <SpanText3>
+              <MdPhoneAndroid size={"2rem"} />
+            </SpanText3>
+            <SpanText2>811 291 24 94</SpanText2>
+          </PhoneAndContainer>
+        </ContainerSupportAndMenu>
+        <HumburgerIcon>
+          <ImageICON src={HumburImage} alt="image not found" />
+        </HumburgerIcon>
+      </ContainerIcon>
     </Nav>
   );
 };
